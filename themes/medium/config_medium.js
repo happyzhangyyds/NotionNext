@@ -14,7 +14,7 @@ const CONFIG_MEDIUM = {
   // 菜单
   MENU_CATEGORY: false, // 显示分类
   MENU_TAG: false, // 显示标签
-  MENU_ARCHIVE: false, // 显示归档
+  MENU_ARCHIVE: true, // 显示归档
   MENU_SEARCH: false, // 显示搜索
 
   // Widget
