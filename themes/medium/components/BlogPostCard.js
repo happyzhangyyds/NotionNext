@@ -65,7 +65,7 @@ const BlogPostCard = ({ post, showSummary }) => {
                                 <Link
                                     href={`${BLOG.SUB_PATH}/${post.slug}`}
                                     passHref
-                                    className="hover:bg-opacity-100 hover:scale-105 duration-200 pointer-events-auto transform font-bold text-green-500 cursor-pointer">
+                                    className="hover:bg-opacity-100 hover:scale-105 duration-200 pointer-events-auto transform font-bold text-red-400 cursor-pointer">
 
                                     {locale.COMMON.ARTICLE_DETAIL}
                                     <i className="ml-1 fas fa-angle-right" />
