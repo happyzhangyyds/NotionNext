@@ -8,7 +8,7 @@ const CONFIG_MEDIUM = {
   POST_LIST_CATEGORY: false, // 列表显示文章分类
   POST_LIST_TAG: false, // 列表显示文章标签
 
-  POST_DETAIL_CATEGORY: true, // 文章显示分类
+  POST_DETAIL_CATEGORY: false, // 文章显示分类
   POST_DETAIL_TAG: false, // 文章显示标签
 
   // 菜单
