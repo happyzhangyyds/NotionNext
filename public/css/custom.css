@@ -8,7 +8,7 @@ background: none;
 
 /*背景颜色渐变*/
 #wrapper{
-background: -webkit-linear-gradient(0deg, #FFF2E2 50%, #FFF2E2 100%)
+background: -webkit-linear-gradient(0deg, #FFF2E2 100%, #FFF2E2 100%)
 }
 .dark #wrapper{
 background: none;
