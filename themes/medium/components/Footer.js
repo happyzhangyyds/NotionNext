@@ -20,12 +20,6 @@ const Footer = ({ title }) => {
       <i className='fas fa-copyright'  /> {`${copyrightDate}`} <span><i className='mx-1 animate-pulse fas fa-heart'  style={{ color: "LightPink" }} /><a href={BLOG.LINK} className='text-black-300 dark:text-black-300 '>{BLOG.AUTHOR}</a>.<br/>
 
       {BLOG.BEI_AN && <><i className='fas fa-shield-alt'  /> <a href='https://beian.miit.gov.cn/' className='mr-2'>{BLOG.BEI_AN}</a><br/></>}
-
-      <span className='hidden busuanzi_container_site_pv'>
-            <i className='fas fa-eye'/><span className='px-1 busuanzi_value_site_pv'> </span>  </span>
-      <span className='pl-2 hidden busuanzi_container_site_uv'>
-        <i className='fas fa-users'/> <span className='px-1 busuanzi_value_site_uv'> </span> </span>
-        <br/>
         <span className='text-xs font-serif'>Powered by <a href='https://github.com/tangly1024/NotionNext' className='text-black-500 dark:text-black-300'>NotionNext {BLOG.VERSION}</a>.</span></span>
     </footer>
   )
