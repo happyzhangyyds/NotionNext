@@ -30,7 +30,7 @@ const SocialButton = () => {
         <i className='fas fa-envelope transform hover:scale-125 duration-150 hover:text-green-600'/>
       </a>}
       {BLOG.ENABLE_RSS && <a target='_blank' rel='noreferrer' title={'RSS'} href={'/feed'} >
-        <i className='fas fa-rss transform hover:scale-125 duration-150 hover:text-green-600'/>
+        <i className='fas fa-rss transform hover:scale-125 duration-150 hover:text-orange-400'/>
       </a>}
       {BLOG.CONTACT_BILIBILI && <a target='_blank' rel='noreferrer' title={'bilibili'} href={BLOG.CONTACT_BILIBILI} >
         <i className='fab fa-bilibili transform hover:scale-125 duration-150 hover:text-green-600'/>
