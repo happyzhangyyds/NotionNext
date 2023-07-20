@@ -184,7 +184,7 @@ const LayoutSlug = props => {
                 </section>
 
                 {/* 移动端目录 */}
-                <TocDrawer {...props} />
+                {/* <TocDrawer {...props} /> */}
             </div>}
         </LayoutBase>
   )
