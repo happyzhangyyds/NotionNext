@@ -44,3 +44,6 @@ animation: huxi_dark 3s ease-in-out infinite;
   box-shadow: 0px 0px 1px 1px #e9f5fa;
 }
 }
+.fa-info:before {
+    content: "\f05a";
+}

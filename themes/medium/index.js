@@ -22,7 +22,6 @@ import { ArticleLock } from './components/ArticleLock'
 import TagGroups from './components/TagGroups'
 import CategoryGroup from './components/CategoryGroup'
 import { isBrowser } from '@/lib/utils'
-import Mark from 'mark.js'
 import BlogArchiveItem from './components/BlogArchiveItem'
 import BlogPostBar from './components/BlogPostBar'
 import NotionPage from '@/components/NotionPage'
@@ -35,6 +34,8 @@ import ShareBar from '@/components/ShareBar'
 import Link from 'next/link'
 import { Transition } from '@headlessui/react'
 import { Style } from './style'
+import replaceSearchResult from '@/components/Mark'
+import ArticleInfo from './components/ArticleInfo'
 
 // 主题全局状态
 const ThemeGlobalMedium = createContext()
@@ -78,9 +79,9 @@ const LayoutBase = props => {
                                 appear={true}
                                 enter="transition ease-in-out duration-700 transform order-first"
                                 enterFrom="opacity-0 translate-y-16"
-                                enterTo="opacity-100 translate-y-0"
+                                enterTo="opacity-100"
                                 leave="transition ease-in-out duration-300 transform"
-                                leaveFrom="opacity-100 translate-y-0"
+                                leaveFrom="opacity-100"
                                 leaveTo="opacity-0 -translate-y-16"
                                 unmount={false}
                             >
@@ -161,6 +162,9 @@ const LayoutSlug = props => {
 
             {!lock && <div id='article-wrapper'>
 
+                {/* 文章信息 */}
+                <ArticleInfo {...props}/>
+
                 {/* Notion文章主体 */}
                 <section className="px-1 max-w-4xl">
                     {post && (<NotionPage post={post} />)}
@@ -202,18 +206,18 @@ const LayoutSearch = (props) => {
   const currentSearch = keyword || router?.query?.s
 
   useEffect(() => {
-    setTimeout(() => {
-      const container = isBrowser() && document.getElementById('posts-wrapper')
-      if (container && container.innerHTML) {
-        const re = new RegExp(currentSearch, 'gim')
-        const instance = new Mark(container)
-        instance.markRegExp(re, {
+    if (isBrowser()) {
+      replaceSearchResult({
+        doms: document.getElementById('posts-wrapper'),
+        search: keyword,
+        target: {
           element: 'span',
           className: 'text-red-500 border-b border-dashed'
-        })
-      }
-    }, 100)
-  })
+        }
+      })
+    }
+  }, [])
+
   return <LayoutBase {...props}>
 
         {/* 搜索导航栏 */}
