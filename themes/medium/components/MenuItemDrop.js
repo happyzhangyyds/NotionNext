@@ -18,7 +18,7 @@ export const MenuItemDrop = ({ link }) => {
 
         {hasSubMenu &&
             <div className={'px-3 h-full whitespace-nowrap duration-300 text-sm justify-between dark:text-gray-300 cursor-pointer flex flex-nowrap items-center ' +
-                (selected ? 'bg-gray-300 text-white hover:text-white' : 'hover:text-gray-300')}>
+                (selected ? 'bg-gray-800 text-white hover:text-white' : 'hover:text-gray-800')}>
                 <div>
                     {link?.icon && <i className={link?.icon} />} {link?.name}
                     {hasSubMenu && <i className={`px-2 fas fa-chevron-down duration-500 transition-all ${show ? ' rotate-180' : ''}`}></i>}
@@ -28,7 +28,7 @@ export const MenuItemDrop = ({ link }) => {
 
         {!hasSubMenu &&
             <div className={'px-3 h-full whitespace-nowrap duration-300 text-sm justify-between dark:text-gray-300 cursor-pointer flex flex-nowrap items-center ' +
-                (selected ? 'bg-gray-300 text-white hover:text-white' : 'hover:text-gray-300')}>
+                (selected ? 'bg-gray-800 text-white hover:text-white' : 'hover:text-gray-500')}>
                 <Link href={link?.to}>
                     {link?.icon && <i className={link?.icon} />} {link?.name}
                 </Link>
@@ -38,7 +38,7 @@ export const MenuItemDrop = ({ link }) => {
         {/* 子菜单 */}
         {hasSubMenu && <ul className={`${show ? 'visible opacity-100 top-12 ' : 'invisible opacity-0 top-10 '} border-gray-100  bg-white  dark:bg-black dark:border-gray-800 transition-all duration-300 z-20 absolute block drop-shadow-lg `}>
             {link?.subMenus?.map(sLink => {
-              return <li key={sLink.id} className='not:last-child:border-b-0 border-b text-gray-700 dark:text-gray-200  hover:bg-gray-50 dark:hover:bg-gray-900 tracking-widest transition-all duration-200  dark:border-gray-800 py-3 pr-6 pl-3'>
+              return <li key={sLink.id} className='not:last-child:border-b-0 border-b text-white-500 dark:text-gray-300  hover:bg-gray-300 dark:hover:bg-gray-900 tracking-widest transition-all duration-200  dark:border-gray-800 py-3 pr-6 pl-3'>
                     <Link href={sLink.to}>
                         <span className='text-xs font-extralight'>{link?.icon && <i className={sLink?.icon} > &nbsp; </i>}{sLink.title}</span>
                     </Link>
