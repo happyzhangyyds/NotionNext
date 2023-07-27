@@ -28,8 +28,7 @@ const CommonHead = ({ meta, children }) => {
                     content={BLOG.SEO_GOOGLE_SITE_VERIFICATION}
                 />
             )}
-           <meta name="baidu-site-verification" content="codeva-sg6QpxOsVW" />
-           <meta name="sogou_site_verification" content="GYGPiMKcmY" />
+            <meta name="baidu-site-verification" content="codeva-sg6QpxOsVW" />
             <meta name="keywords" content={keywords} />
             <meta name="description" content={description} />
             <meta property="og:locale" content={lang} />
