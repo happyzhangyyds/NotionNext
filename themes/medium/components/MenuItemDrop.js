@@ -30,7 +30,7 @@ export const MenuItemDrop = ({ link }) => {
             <div className={'px-3 h-full whitespace-nowrap duration-300 text-sm justify-between dark:text-gray-300 cursor-pointer flex flex-nowrap items-center ' +
                 (selected ? 'bg-transparent text-orange-500 hover:text-orange-500' : 'hover:text-orange-400')}>
                     {/* bg-gray-500是调节选中的背景色的，比如友情链接 */}
-                <Link href={link?.to}>
+                <Link href={link?.to} target={link?.to?.indexOf('http') === 0 ? '_blank' : '_self'}>
                     {link?.icon && <i className={link?.icon} />} {link?.name}
                 </Link>
             </div>
@@ -41,7 +41,7 @@ export const MenuItemDrop = ({ link }) => {
             {link?.subMenus?.map(sLink => {
               return <li key={sLink.id} className='not:last-child:border-b-0 border-b text-white-500 dark:text-gray-300  hover:bg-orange-200 dark:hover:bg-gray-900 tracking-widest transition-all duration-200  dark:border-gray-800 py-3 pr-6 pl-3'>
                     {/* text-white-500是子菜单的字体颜色 */}
-                    <Link href={sLink.to}>
+                    <Link href={sLink.to} target={link?.to?.indexOf('http') === 0 ? '_blank' : '_self'}>
                         <span className='text-xs font-extralight'>{link?.icon && <i className={sLink?.icon} > &nbsp; </i>}{sLink.title}</span>
                     </Link>
                 </li>
