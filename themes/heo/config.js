@@ -13,9 +13,9 @@ const CONFIG = {
   HERO_TITLE_1: '分享编程',
   HERO_TITLE_2: '与思维认知',
   HERO_TITLE_3: 'MATRIXCORE.TOP',
-  HERO_TITLE_4: '新版上线',
-  HERO_TITLE_5: 'NotionNext4.0 轻松定制主题',
-  HERO_TITLE_LINK: 'https://matrixcore.top',
+  HERO_TITLE_4: '秘密树洞',
+  HERO_TITLE_5: '乘着时光胶囊看岁月的晴雨表',
+  HERO_TITLE_LINK: 'https://matrixcore.top/article/feedback',
 
   // 英雄区显示三个置顶分类
   HERO_CATEGORY_1: { title: '必看精选', url: '/tag/必看精选' },
