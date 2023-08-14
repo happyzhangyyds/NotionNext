@@ -28,8 +28,9 @@ const Footer = ({ title }) => {
             <div className='w-full h-24'>
                 <SocialButton />
             </div>
-
-            <AdSlot type='native'/>
+            
+            <AdSlot type='adsbygoogle'/>
+            
             <br />
 
             {/* 底部页面信息 */}
