@@ -15,7 +15,7 @@ import SearchNav from './components/SearchNav'
 import BlogPostArchive from './components/BlogPostArchive'
 import { ArticleLock } from './components/ArticleLock'
 import PostHeader from './components/PostHeader'
-import Comment from '@/components/Comment'
+import Comment, { commentEnable } from '@/components/Comment'
 import NotionPage from '@/components/NotionPage'
 import ArticleAdjacent from './components/ArticleAdjacent'
 import ArticleCopyright from './components/ArticleCopyright'
@@ -46,7 +46,7 @@ const LayoutBase = props => {
   return (
         <div id='theme-heo' className='bg-[#f7f9fe] dark:bg-[#18171d] h-full min-h-screen flex flex-col'>
             {/* SEO信息 */}
-            <CommonHead meta={meta}/>
+            <CommonHead meta={meta} />
             <Style />
 
             {/* 顶部嵌入 导航栏，首页放hero，文章页放文章详情 */}
@@ -73,7 +73,6 @@ const LayoutBase = props => {
             {/* 页脚 */}
             <Footer title={siteInfo?.title || BLOG.TITLE} />
         </div>
-        
   )
 }
 
@@ -164,7 +163,9 @@ const LayoutSearch = props => {
             <div id='post-outer-wrapper' className='px-5  md:px-0'>
                 {!currentSearch
                   ? <SearchNav {...props} />
-                  : <div id="posts-wrapper"> {BLOG.POST_LIST_STYLE === 'page' ? <BlogPostListPage {...props} /> : <BlogPostListScroll {...props} />}  </div>}
+                  : <div id="posts-wrapper">
+                        {BLOG.POST_LIST_STYLE === 'page' ? <BlogPostListPage {...props} /> : <BlogPostListScroll {...props} />}
+                    </div>}
             </div>
         </LayoutBase>
   )
@@ -240,7 +241,7 @@ const LayoutSlug = props => {
                         data-aos-duration="300"
                         data-aos-once="false"
                         data-aos-anchor-placement="top-bottom"
-                         itemScope itemType="https://schema.org/Movie" className="subpixel-antialiased overflow-y-hidden" >
+                        itemScope itemType="https://schema.org/Movie" className="subpixel-antialiased overflow-y-hidden" >
                         {/* Notion文章主体 */}
                         <section className='px-5 justify-center mx-auto'>
                             <WWAds orientation='horizontal' className='w-full'/>
@@ -315,7 +316,7 @@ const Layout404 = props => {
                         appear={true}
                         enter="transition ease-in-out duration-700 transform order-first"
                         enterFrom="opacity-0 translate-y-16"
-                        enterTo="opacity-100 translate-y-0"
+                        enterTo="opacity-100"
                         leave="transition ease-in-out duration-300 transform"
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 -translate-y-16"
@@ -325,7 +326,7 @@ const Layout404 = props => {
                         {/* 404卡牌 */}
                         <div className='error-content flex flex-col md:flex-row w-full mt-12 h-[30rem] md:h-96 justify-center items-center bg-white border rounded-3xl'>
                             {/* 左侧动图 */}
-                            <LazyImage className="error-img h-60 md:h-full p-4" src={'https://bu.dusays.com/2023/08/18/64df36303feb9.gif'}></LazyImage>
+                            <LazyImage className="error-img h-60 md:h-full p-4" src={'https://bu.dusays.com/2023/03/03/6401a7906aa4a.gif'}></LazyImage>
 
                             {/* 右侧文字 */}
                             <div className='error-info flex-1 flex flex-col justify-center items-center space-y-4'>
