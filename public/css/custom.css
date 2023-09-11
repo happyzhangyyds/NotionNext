@@ -6,10 +6,3 @@ footer:before {
 background: none;
 }
 
-/*背景颜色渐变*/
-#wrapper{
-background: #FFF2E2 50%
-}
-.dark #wrapper{
-background: none;
-}
