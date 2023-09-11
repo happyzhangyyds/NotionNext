@@ -83,7 +83,7 @@ const CONFIG = {
     {
       title_1: 'JS',
       img_1: '/images/heo/11.png',
-      color_1: '#f7cb4f',
+      color_1: '#FFF2E2',
       title_2: 'HTML',
       img_2: '/images/heo/12.png',
       color_2: '#E3EDCD'
