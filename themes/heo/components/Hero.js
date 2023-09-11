@@ -98,7 +98,7 @@ function Banner(props) {
         id="banner-cover"
         style={{ backdropFilter: 'blur(15px)' }}
         className={
-          'rounded-xl overflow-hidden opacity-0 group-hover:opacity-100 duration-300 transition-all bg-[#4259efdd] dark:bg-[#dca846] dark:text-white cursor-pointer absolute w-full h-full top-0 flex justify-start items-center'
+          'rounded-xl overflow-hidden opacity-0 group-hover:opacity-100 duration-300 transition-all bg-[#faf9de] dark:bg-[#dca846] dark:text-white cursor-pointer absolute w-full h-full top-0 flex justify-start items-center'
         }
       >
         <div className="ml-12 -translate-x-32 group-hover:translate-x-0 duration-300 transition-all ease-in">
@@ -348,7 +348,7 @@ function TodayCard({ cRef }) {
           isCoverUp
             ? 'opacity-100 cursor-pointer'
             : 'opacity-0 transform scale-110 pointer-events-none'
-        } shadow transition-all duration-200 today-card h-full bg-[#0E57D5] rounded-xl relative overflow-hidden flex items-end`}
+        } shadow transition-all duration-200 today-card h-full bg-[#c7edcc] rounded-xl relative overflow-hidden flex items-end`}
       >
         <div
           id="today-card-info"
@@ -362,10 +362,10 @@ function TodayCard({ cRef }) {
             onClick={handleClickMore}
             className={`'${
               isCoverUp ? '' : 'hidden pointer-events-none '
-            } flex items-center px-3 h-10 justify-center bg-[#425aef] hover:bg-[#4259efcb] transition-colors duration-100 rounded-3xl`}
+            } flex items-center px-3 h-10 justify-center bg-[#7cd587] hover:bg-[#7cd587] transition-colors duration-100 rounded-3xl`}
           >
             <PlusSmall
-              className={'w-6 h-6 mr-2 bg-white rounded-full stroke-indigo-400'}
+              className={'w-6 h-6 mr-2 bg-white rounded-full stroke-green-600'}
             />
             <div id="more" className="select-none">
               更多推荐
@@ -379,7 +379,7 @@ function TodayCard({ cRef }) {
           } cursor-pointer today-card-cover absolute w-full h-full top-0`}
           style={{
             background:
-              "url('https://bu.dusays.com/2023/03/12/640dcd3a1b146.png') no-repeat center /cover"
+              "url('https://bu.dusays.com/2023/09/11/64fed7f423cb6.png') no-repeat center /cover"
           }}
         ></div>
       </div>
