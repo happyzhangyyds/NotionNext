@@ -4,7 +4,10 @@ const CONFIG = {
   SITE_CREATE_TIME: '2023-04-20', // 建站日期，用于计算网站运行的第几天
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
-  NOTICE_BAR: [
+  NOTICE_BAR: [ 
+  { title: '风雨如晦，鸡鸣不已。既见君子，云胡不喜？', url: 'https://matrixcore.top/article/feedback' },
+  { title: '呦呦鹿鸣，食野之苹。我有嘉宾，鼓瑟吹笙。', url: 'https://matrixcore.top/links' },
+  { title: '昔我往矣，杨柳依依。今我来思，雨雪霏霏。', url: 'https://matrixcore.top/article/Terminal' }
   ],
 
   // 英雄区(首页顶部大卡)
