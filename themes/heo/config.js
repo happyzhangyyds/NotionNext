@@ -5,8 +5,6 @@ const CONFIG = {
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   NOTICE_BAR: [
-    { title: '欢迎来到我的博客', url: 'https://matrixcore.top' },
-    { title: '分享有趣的科技知识', url: 'https://matrixcore.top/article/poem' }
   ],
 
   // 英雄区(首页顶部大卡)
