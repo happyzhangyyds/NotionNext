@@ -1,7 +1,4 @@
 /* 静态文件导入 自定义样式*/
-footer:before {
-  background-color: rgba(255, 242, 226, 100);
-}
 .dark footer{
 background: none;
 }
