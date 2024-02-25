@@ -125,7 +125,7 @@ function TagsGroupBar() {
   const groupIcons = siteConfig('HEO_GROUP_ICONS', null, CONFIG).concat(siteConfig('HEO_GROUP_ICONS', null, CONFIG))
 
   return (
-    <div className="tags-group-all flex -rotate-[30deg] h-full">
+    <div className="tags-group-all flex -rotate-[15deg] h-full">
       <div className="tags-group-wrapper flex flex-nowrap absolute top-16">
         {groupIcons?.map((g, index) => {
           return (
@@ -383,7 +383,8 @@ function TodayCard({ cRef, siteInfo }) {
             isCoverUp ? '' : ' pointer-events-none'
           } cursor-pointer today-card-cover absolute w-full h-full top-0`}
           style={{
-            background: `url('${siteInfo?.pageCover}') no-repeat center /cover`
+            background: 
+            "url('https://bu.dusays.com/2023/09/11/64fed7f423cb6.png') no-repeat center /cover"
           }}
         ></div>
       </div>
