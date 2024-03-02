@@ -49,58 +49,58 @@ const CONFIG = {
   HEO_GROUP_ICONS: [
     {
       title_1: 'AfterEffect',
-      img_1: '/images/heo/1.png',
+      img_1: 'https://bu.dusays.com/2024/03/02/65e3481d24208.png',
       color_1: '#C7EDCC',
       title_2: 'Sketch',
-      img_2: '/images/heo/2.png',
+      img_2: 'https://bu.dusays.com/2024/03/02/65e34826af108.png',
       color_2: '#E9EBFE'
     },
     {
       title_1: 'Docker',
-      img_1: '/images/heo/3.png',
+      img_1: 'https://bu.dusays.com/2024/03/02/65e348289ba2e.png',
       color_1: '#FAF9DE',
       title_2: 'Photoshop',
-      img_2: '/images/heo/4.png',
+      img_2: 'https://bu.dusays.com/2024/03/02/65e3482a8d819.png',
       color_2: '#DCE2F1'
     },
     {
       title_1: 'FinalCutPro',
-      img_1: '/images/heo/5.png',
+      img_1: 'https://bu.dusays.com/2024/03/02/65e3482c77508.png',
       color_1: '#FDE6E0',
       title_2: 'Python',
-      img_2: '/images/heo/6.png',
+      img_2: 'https://bu.dusays.com/2024/03/02/65e3482e6f684.png',
       color_2: '#FFF2E2'
     },
     {
       title_1: 'Swift',
-      img_1: '/images/heo/7.png',
+      img_1: 'https://bu.dusays.com/2024/03/02/65e348451f2a2.png',
       color_1: '#FDE6E0',
       title_2: 'Principle',
-      img_2: '/images/heo/8.png',
+      img_2: 'https://bu.dusays.com/2024/03/02/65e348475eb94.png',
       color_2: '#DCE2F1'
     },
     {
       title_1: 'illustrator',
-      img_1: '/images/heo/9.png',
+      img_1: 'https://bu.dusays.com/2024/03/02/65e348494cf31.png',
       color_1: '#E9EBFE',
       title_2: 'CSS3',
-      img_2: '/images/heo/10.png',
+      img_2: 'https://bu.dusays.com/2024/03/02/65e3484b362e0.png',
       color_2: '#E3EDCD'
     },
     {
       title_1: 'JS',
-      img_1: '/images/heo/11.png',
+      img_1: 'https://bu.dusays.com/2024/03/02/65e3484d774fc.png',
       color_1: '#FFF2E2',
       title_2: 'HTML',
-      img_2: '/images/heo/12.png',
+      img_2: 'https://bu.dusays.com/2024/03/02/65e3484fa8731.png',
       color_2: '#E3EDCD'
     },
     {
       title_1: 'Git',
-      img_1: '/images/heo/13.png',
+      img_1: 'https://bu.dusays.com/2024/03/02/65e3485193068.png',
       color_1: '#E9EBFE',
       title_2: 'Rhino',
-      img_2: '/images/heo/14.png',
+      img_2: 'https://bu.dusays.com/2024/03/02/65e348537ed45.png',
       color_2: '#FDE6E0'
     }
   ],
