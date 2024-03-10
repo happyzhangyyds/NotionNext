@@ -30,9 +30,14 @@ const Footer = ({ title }) => {
                 <div id='footer-bottom-left'>
                    NotionNext {siteConfig('VERSION')} <i className='fas fa-copyright' /> {`${copyrightDate}`} <i className='mx-1 animate-pulse fas fa-heart text-pink-200' /> <a href={siteConfig('LINK')} style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300 '>{siteConfig('AUTHOR')}</a>
                    <a href='http://www.andawell.com' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>Andawell</a>
+                   <a href='https://blog.tangly1024.com/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>Tangly</a>
                    <a href='https://www.wys.me/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>王语双</a>
                    <a href='https://dusays.com/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>杜老师</a>
                    <a href='https://chenge.ink/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>尘歌</a>
+                   <a href='https://shiyu.dev/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>时雨</a>
+                   <a href='https://yayu.net/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>雅余</a>
+                   <a href='https://veryjack.com/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>Jack</a>
+                   <a href='https://www.hsuyeung.com' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>Hsu Yeung</a>
                 </div>
 
             <div id='footer-bottom-right'>
