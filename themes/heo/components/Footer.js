@@ -28,9 +28,11 @@ const Footer = ({ title }) => {
             <div id='footer-bottom' className='w-full h-20 flex flex-col p-3 lg:flex-row justify-between px-6 items-center bg-[#f1f3f7] dark:bg-[#30343f]'>
 
                 <div id='footer-bottom-left'>
-                   NotionNext {siteConfig('VERSION')} <i className='fas fa-copyright' /> {`${copyrightDate}`} <i className='mx-1 animate-pulse fas fa-heart text-pink-200' /> <a href={siteConfig('LINK')} className='underline font-bold  dark:text-gray-300 '>{siteConfig('AUTHOR')}</a>.
-                   <a href='http://www.andawell.com' className='underline font-bold  dark:text-gray-300'>Andawell</a>
-                   <a href='https://www.wys.me/' className='underline font-bold  dark:text-gray-300'>王语双</a>
+                   NotionNext {siteConfig('VERSION')} <i className='fas fa-copyright' /> {`${copyrightDate}`} <i style={{ marginRight: '10px' }} className='mx-1 animate-pulse fas fa-heart text-pink-200' /> <a href={siteConfig('LINK')} className='underline font-bold  dark:text-gray-300 '>{siteConfig('AUTHOR')}</a>
+                   <a href='http://www.andawell.com' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>Andawell</a>
+                   <a href='https://www.wys.me/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>王语双</a>
+                   <a href='https://dusays.com/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>杜老师</a>
+                   <a href='https://chenge.ink/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>尘歌</a>
                 </div>
 
             <div id='footer-bottom-right'>
