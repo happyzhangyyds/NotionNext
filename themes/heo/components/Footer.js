@@ -29,6 +29,8 @@ const Footer = ({ title }) => {
 
                 <div id='footer-bottom-left'>
                    NotionNext {siteConfig('VERSION')} <i className='fas fa-copyright' /> {`${copyrightDate}`} <i className='mx-1 animate-pulse fas fa-heart text-pink-200' /> <a href={siteConfig('LINK')} className='underline font-bold  dark:text-gray-300 '>{siteConfig('AUTHOR')}</a>.
+                   <a href='http://www.andawell.com' className='underline font-bold  dark:text-gray-300'>Andawell</a>
+                   <a href='https://www.wys.me/' className='underline font-bold  dark:text-gray-300'>王语双</a>
                 </div>
 
             <div id='footer-bottom-right'>
