@@ -35,13 +35,7 @@ const CONFIG = {
 
   // 右侧个人资料卡牌欢迎语，点击可自动切换
   HEO_INFOCARD_GREETINGS: [
-    '你好！我是',
-    '🔍 分享与热心帮助',
-    '🤝 专修交互与设计',
-    '🏃 脚踏实地行动派',
-    '🏠 智能家居小能手',
-    '🤖️ 数码科技爱好者',
-    '🧱 团队小组发动机'
+    '你好！我是'
   ],
   HEO_INFO_CARD_URL: 'https://github.com/tangly1024/NotionNext', // 个人资料底部按钮链接
 
@@ -52,7 +46,7 @@ const CONFIG = {
       img_1: 'https://bu.dusays.com/2024/03/02/65e3481d24208.png',
       color_1: '#C7EDCC',
       title_2: 'Sketch',
-      img_2: 'https://bu.dusays.com/2024/03/02/65e34826af108.png',
+      img_2: 'https://bu.dusays.com/2024/03/15/65f45641869c6.jpeg',
       color_2: '#E9EBFE'
     },
     {
