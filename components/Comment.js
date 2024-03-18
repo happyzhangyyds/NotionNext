@@ -1,6 +1,5 @@
 import dynamic from 'next/dynamic'
 import Tabs from '@/components/Tabs'
-import { isBrowser, isSearchEngineBot } from '@/lib/utils'
 import { useRouter } from 'next/router'
 import { siteConfig } from '@/lib/config'
 

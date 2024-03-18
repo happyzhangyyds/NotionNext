@@ -49,7 +49,6 @@ const MyApp = ({ Component, pageProps }) => {
         <GlobalHead {...pageProps}/>
         <Component {...pageProps} />
       </GLayout>
-      <ExternalPlugins {...pageProps} />
     </GlobalContextProvider>
   )
 }
