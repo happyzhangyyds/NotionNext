@@ -23,11 +23,9 @@ const Comment = ({ siteInfo, frontMatter, className }) => {
 
   return (
         <div key={frontMatter?.id} id='comment' className={`comment mt-5 text-gray-800 dark:text-gray-300 ${className || ''}`}>
-            <Tabs>
                 {COMMENT_TWIKOO_ENV_ID && (<div key='Twikoo'>
                     <TwikooCompenent />
                 </div>)}
-            </Tabs>
         </div>
   )
 }
