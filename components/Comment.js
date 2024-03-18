@@ -21,11 +21,6 @@ const Comment = ({ siteInfo, frontMatter, className }) => {
 
   const COMMENT_TWIKOO_ENV_ID = siteConfig('COMMENT_TWIKOO_ENV_ID')
 
-
-  if (isSearchEngineBot()) {
-    return null
-  }
-
   if (!frontMatter) {
     return <>Loading...</>
   }
