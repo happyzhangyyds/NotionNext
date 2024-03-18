@@ -43,58 +43,58 @@ const CONFIG = {
   HEO_GROUP_ICONS: [
     {
       title_1: 'AfterEffect',
-      img_1: 'https://bu.dusays.com/2024/03/02/65e3481d24208.png',
+      img_1: 'https://bu.dusays.com/2024/03/18/65f84babc5d73.webp',
       color_1: '#C7EDCC',
       title_2: 'Sketch',
-      img_2: 'https://bu.dusays.com/2024/03/15/65f45641869c6.jpeg',
+      img_2: 'https://bu.dusays.com/2024/03/18/65f84bae6ebbc.webp',
       color_2: '#E9EBFE'
     },
     {
       title_1: 'Docker',
-      img_1: 'https://bu.dusays.com/2024/03/02/65e348289ba2e.png',
+      img_1: 'https://bu.dusays.com/2024/03/18/65f84bb02e067.webp',
       color_1: '#FAF9DE',
       title_2: 'Photoshop',
-      img_2: 'https://bu.dusays.com/2024/03/02/65e3482a8d819.png',
+      img_2: 'https://bu.dusays.com/2024/03/18/65f84bb1cdabf.webp',
       color_2: '#DCE2F1'
     },
     {
       title_1: 'FinalCutPro',
-      img_1: 'https://bu.dusays.com/2024/03/02/65e3482c77508.png',
+      img_1: 'https://bu.dusays.com/2024/03/18/65f84bb3d184f.webp',
       color_1: '#FDE6E0',
       title_2: 'Python',
-      img_2: 'https://bu.dusays.com/2024/03/02/65e3482e6f684.png',
+      img_2: 'https://bu.dusays.com/2024/03/18/65f84bb5cdcf2.webp',
       color_2: '#FFF2E2'
     },
     {
       title_1: 'Swift',
-      img_1: 'https://bu.dusays.com/2024/03/02/65e348451f2a2.png',
+      img_1: 'https://bu.dusays.com/2024/03/18/65f84bb7bd12e.webp',
       color_1: '#FDE6E0',
       title_2: 'Principle',
-      img_2: 'https://bu.dusays.com/2024/03/02/65e348475eb94.png',
+      img_2: 'https://bu.dusays.com/2024/03/18/65f84bb9b3e79.webp',
       color_2: '#DCE2F1'
     },
     {
       title_1: 'illustrator',
-      img_1: 'https://bu.dusays.com/2024/03/02/65e348494cf31.png',
+      img_1: 'https://bu.dusays.com/2024/03/18/65f84bbbeaa51.webp',
       color_1: '#E9EBFE',
       title_2: 'CSS3',
-      img_2: 'https://bu.dusays.com/2024/03/02/65e3484b362e0.png',
+      img_2: 'https://bu.dusays.com/2024/03/18/65f84bbe5f1f6.webp',
       color_2: '#E3EDCD'
     },
     {
       title_1: 'JS',
-      img_1: 'https://bu.dusays.com/2024/03/02/65e3484d774fc.png',
+      img_1: 'https://bu.dusays.com/2024/03/18/65f84bc06695c.webp',
       color_1: '#FFF2E2',
       title_2: 'HTML',
-      img_2: 'https://bu.dusays.com/2024/03/02/65e3484fa8731.png',
+      img_2: 'https://bu.dusays.com/2024/03/18/65f84bc28e454.webp',
       color_2: '#E3EDCD'
     },
     {
       title_1: 'Git',
-      img_1: 'https://bu.dusays.com/2024/03/02/65e3485193068.png',
+      img_1: 'https://bu.dusays.com/2024/03/18/65f84bc4c090d.webp',
       color_1: '#E9EBFE',
       title_2: 'Rhino',
-      img_2: 'https://bu.dusays.com/2024/03/02/65e348537ed45.png',
+      img_2: 'https://bu.dusays.com/2024/03/18/65f84bc6b37c1.webp',
       color_2: '#FDE6E0'
     }
   ],
