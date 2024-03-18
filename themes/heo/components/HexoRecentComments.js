@@ -1,7 +1,6 @@
-import Card from '@/themes/hexo/components/Card'
+import Card from '@/themes/heo/components/Card'
 import { useGlobal } from '@/lib/global'
 import Link from 'next/link'
-import { RecentComments } from '@waline/client'
 import { useEffect, useState } from 'react'
 import { siteConfig } from '@/lib/config'
 

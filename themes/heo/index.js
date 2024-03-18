@@ -18,7 +18,6 @@ import Hero from './components/Hero'
 import { useRouter } from 'next/router'
 import SearchNav from './components/SearchNav'
 import BlogPostArchive from './components/BlogPostArchive'
-import { ArticleLock } from './components/ArticleLock'
 import PostHeader from './components/PostHeader'
 import Comment from '@/components/Comment'
 import NotionPage from '@/components/NotionPage'
@@ -36,8 +35,6 @@ import LatestPostsGroup from './components/LatestPostsGroup'
 import FloatTocButton from './components/FloatTocButton'
 import replaceSearchResult from '@/components/Mark'
 import LazyImage from '@/components/LazyImage'
-import WWAds from '@/components/WWAds'
-import { AdSlot } from '@/components/GoogleAdsense'
 import { siteConfig } from '@/lib/config'
 import { isBrowser } from '@/lib/utils'
 import { loadWowJS } from '@/lib/wow'
@@ -307,9 +304,7 @@ const LayoutSlug = props => {
             >
               {/* Notion文章主体 */}
               <section className="px-5 justify-center mx-auto">
-                <WWAds orientation="horizontal" className="w-full" />
                 {post && <NotionPage post={post} />}
-                <WWAds orientation="horizontal" className="w-full" />
               </section>
 
               {/* 分享 */}
@@ -330,10 +325,6 @@ const LayoutSlug = props => {
               ? null
               : <div className={`${commentEnable && post ? '' : 'hidden'}`}>
                 <hr className="my-4 border-dashed" />
-                {/* 评论区上方广告 */}
-                <div className="py-2">
-                    <AdSlot />
-                </div>
                 {/* 评论互动 */}
                 <div className="duration-200 overflow-x-auto px-5">
                   <div className="text-2xl dark:text-white">
