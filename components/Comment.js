@@ -1,8 +1,6 @@
 import dynamic from 'next/dynamic'
 import Tabs from '@/components/Tabs'
-import { useRouter } from 'next/router'
 import { siteConfig } from '@/lib/config'
-
 
 const TwikooCompenent = dynamic(
   () => {
@@ -17,8 +15,6 @@ const TwikooCompenent = dynamic(
  * @returns
  */
 const Comment = ({ siteInfo, frontMatter, className }) => {
-  const router = useRouter()
-
   const COMMENT_TWIKOO_ENV_ID = siteConfig('COMMENT_TWIKOO_ENV_ID')
 
   if (!frontMatter) {
