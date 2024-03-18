@@ -1,5 +1,4 @@
 import dynamic from 'next/dynamic'
-import Tabs from '@/components/Tabs'
 import { siteConfig } from '@/lib/config'
 
 const TwikooCompenent = dynamic(
