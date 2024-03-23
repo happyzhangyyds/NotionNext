@@ -41,10 +41,10 @@ const Footer = ({ title }) => {
                    <a href='https://kuangyichen.com/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>易浅</a>
                 </div>
 
-            <div id='footer-bottom-right' className='bg-[#f1f3f7] dark:bg-[#30343f]'>
-                {siteConfig('BEI_AN') && <><i className='fas fa-shield-alt' /> <span className='mr-2'>{siteConfig('BEI_AN')}</span></>}
-            </div>
-        </div>
+                <div id='footer-bottom-right'>
+                   {siteConfig('BEI_AN') && <><i className='fas fa-shield-alt' /> <span className='mr-2'>{siteConfig('BEI_AN')}</span></>}
+                </div>
+          </div>
         </footer >
   )
 }
