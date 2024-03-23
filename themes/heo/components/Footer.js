@@ -40,10 +40,6 @@ const Footer = ({ title }) => {
                    <a href='https://www.hsuyeung.com' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>Hsu Yeung</a>
                    <a href='https://kuangyichen.com/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>易浅</a>
                 </div>
-
-                <div id='footer-bottom-right'>
-                   {siteConfig('BEI_AN') && <><i className='fas fa-shield-alt' /> <span className='mr-2'>{siteConfig('BEI_AN')}</span></>}
-                </div>
           </div>
         </footer >
   )
