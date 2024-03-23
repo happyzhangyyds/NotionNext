@@ -62,6 +62,9 @@ const Style = () => {
           transform: translateX(-50%);
         }
       }
+      #footer-bottom {
+        overflow: hidden;
+      }               
     `}</style>
   )
 }
