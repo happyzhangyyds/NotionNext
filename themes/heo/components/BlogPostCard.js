@@ -55,6 +55,15 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
                         </main>
                     )}
 
+                    {/* 搜索结果 */}
+                    {post.results && (
+                        <p className="line-clamp-2 mt-4 text-gray-700 dark:text-gray-300 text-sm font-light leading-7">
+                            {post.results.map((r, index) => (
+                                <span key={index}>{r}</span>
+                            ))}
+                        </p>
+                    )}
+
                     <div className="md:flex-nowrap flex-wrap md:justify-start inline-block">
                         <div>
                             {' '}

@@ -5,10 +5,9 @@
  * @returns
  */
 const Style = () => {
-  return (
-    <style jsx global>{`
-      body {
-        background-color: #f7f9fe;
+  return <style jsx global>{`
+    body {
+        background-color: #fff2e2;
         overflow-x: hidden;
       }
 
@@ -66,7 +65,7 @@ const Style = () => {
         overflow: hidden;
       }               
     `}</style>
-  )
+    
 }
 
 export { Style }

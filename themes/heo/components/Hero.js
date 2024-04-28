@@ -126,6 +126,7 @@ function TagsGroupBar() {
 
   return (
     <div className="tags-group-all flex -rotate-[15deg] h-full">
+    <div className="tags-group-all flex -rotate-[15deg] h-full">
       <div className="tags-group-wrapper flex flex-nowrap absolute top-16">
         {groupIcons?.map((g, index) => {
           return (
@@ -354,6 +355,7 @@ function TodayCard({ cRef, siteInfo }) {
             ? 'opacity-100 cursor-pointer'
             : 'opacity-0 transform scale-110 pointer-events-none'
         } shadow transition-all duration-200 today-card h-full bg-[#c7edcc] rounded-xl relative overflow-hidden flex items-end`}
+        } shadow transition-all duration-200 today-card h-full bg-[#c7edcc] rounded-xl relative overflow-hidden flex items-end`}
       >
         <div
           id="today-card-info"
@@ -368,8 +370,10 @@ function TodayCard({ cRef, siteInfo }) {
             className={`'${
               isCoverUp ? '' : 'hidden pointer-events-none '
             } flex items-center px-3 h-10 justify-center bg-[#7cd587] hover:bg-[#7cd587] transition-colors duration-100 rounded-3xl`}
+            } flex items-center px-3 h-10 justify-center bg-[#7cd587] hover:bg-[#7cd587] transition-colors duration-100 rounded-3xl`}
           >
             <PlusSmall
+              className={'w-6 h-6 mr-2 bg-white rounded-full stroke-green-600'}
               className={'w-6 h-6 mr-2 bg-white rounded-full stroke-green-600'}
             />
             <div id="more" className="select-none">
