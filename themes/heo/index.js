@@ -38,6 +38,7 @@ import LazyImage from '@/components/LazyImage'
 import { siteConfig } from '@/lib/config'
 import { isBrowser } from '@/lib/utils'
 import { loadWowJS } from '@/lib/wow'
+import BlogMemos from './components/BlogMemos'
 
 /**
  * 基础布局 采用上中下布局，移动端使用顶部侧边导航栏
@@ -248,6 +249,35 @@ const LayoutArchive = props => {
         </div>
       </div>
   )
+}
+
+/**
+ * 说说
+ * @param {*} props
+ * @returns
+ */
+const LayoutMemos = (props) => {
+  const memoPageInfo = {
+    id: "0f94bc3a13004f3bbf75da174b0d741e", // 固定ID，确保唯一性
+    type: "Memos",
+    title: "我的说说",
+  };
+  return  (
+  <div className="w-full lg:hover:shadow rounded-md lg:rounded-md lg:px-2 lg:py-4 article">
+    <div id="article-wrapper" className="overflow-x-auto flex-grow mx-auto md:w-full px-3 font-serif">
+      <article itemScope itemType="https://schema.org/Movie" className="subpixel-antialiased overflow-y-hidden overflow-x-hidden" >
+         {/* Notion文章主体 */}
+         <section className="px-5 justify-center mx-auto">
+              <BlogMemos {...props}/>
+         </section>
+      </article>
+      <div className='pt-4 border-dashed'></div>  
+       {/* 评论互动 */}
+       <div className="duration-200 overflow-x-auto px-3">
+        <Comment frontMatter={memoPageInfo} />
+      </div>       
+    </div>
+  </div>)
 }
 
 /**
@@ -498,6 +528,7 @@ export {
   LayoutIndex,
   LayoutSearch,
   LayoutArchive,
+  LayoutMemos,
   LayoutSlug,
   Layout404,
   LayoutPostList,
