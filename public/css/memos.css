@@ -526,7 +526,7 @@ h2 {
     body {
         padding: 0; /* 移除边距，让内容填满整个屏幕宽度 */
     }
-
+    
     .menu,
     .title {
         font-size: 1.5rem; /* 适应高分辨率屏幕的字体大小 */
@@ -555,7 +555,9 @@ h2 {
         margin-right: auto;
         max-width: 100%; /* 让内容填满屏幕宽度 */
     }
-
+    .memos__content:before {
+        display: none; /* 隐藏头像框 */
+    }
     /* 其他需要调整的样式... */
 }
 
