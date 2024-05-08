@@ -521,7 +521,7 @@ h2 {
     height: 152px;
 }
 
-/* @media (max-width: 683px) {
+@media (max-width: 683px) {
 
     body {
         padding: 45px 50px 45px 20px;
@@ -582,7 +582,7 @@ h2 {
     .load-btn {
         margin-left: 0;
     }
-} */
+}
 
 .video-wrapper {
     height: 0;
