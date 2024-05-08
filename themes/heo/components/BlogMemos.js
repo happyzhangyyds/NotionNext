@@ -3,9 +3,19 @@ import { loadExternalResource } from '@/lib/utils';
 
 const BlogMemos = () => {
     const [isResourcesLoaded, setResourcesLoaded] = useState(false);
+        // 设置页面标题
+    useEffect(() => {
+        const originalTitle = document.title; // 保存当前标题
+        document.title = "岁月轻歌"; // 设置新的标题
+    
+        // 组件卸载时还原原来的标题
+        return () => {
+            document.title = originalTitle;
+        };
+        }, []);
+    
 
     useEffect(() => {
-        document.title = '岁月轻歌'; // 设置页面标题
         // 并行加载CSS文件
         Promise.all([
             loadExternalResource('/css/memos.css', 'css'),
