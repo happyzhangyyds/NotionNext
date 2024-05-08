@@ -558,6 +558,13 @@ h2 {
     .memos__content:before {
         display: none; /* 隐藏头像框 */
     }
+
+    .memos__content {
+        margin: 0 auto; /* 保持内容居中 */
+        max-width: 90%; /* 或者更大的百分比，根据您的设计需求 */
+        padding: 1rem; /* 或者根据您的设计需求调整内边距 */
+        box-sizing: border-box; /* 确保内边距不会影响总宽度 */
+    }
     /* 其他需要调整的样式... */
 }
 
