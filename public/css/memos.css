@@ -521,67 +521,40 @@ h2 {
     height: 152px;
 }
 
-@media (max-width: 683px) {
+@media (max-width: 2400px) {
 
     body {
-        padding: 45px 50px 45px 20px;
+        padding: 20px; /* 增加边距，确保内容不会紧贴屏幕边缘 */
     }
 
     .menu,
     .title {
-        font-size: 1rem;
+        font-size: 1.5rem; /* 可能需要增加字体大小以适应高分辨率屏幕 */
     }
 
     .memos__content {
-        margin-left: 0;
-    }
-
-    .memos__text:before {
-        display: none;
+        margin: 0 auto; /* 居中内容，如果需要的话 */
+        max-width: 680px; /* 设置最大宽度，防止内容在大屏幕上过于宽敞 */
     }
 
     .memos__userinfo {
-        margin-left: 30px;
-    }
-
-    .memos__content:before {
-        border-radius: 25px;
-        height: 25px;
-        width: 25px;
-        left: 15px;
-        top: 15px;
-        z-index: 2;
-    }
-
-    .load-btn {
-        margin-left: 0;
-    }
-
-    .timeline ul li {
-        margin-left: 0;
+        margin-left: 15px; /* 调整左边距，如果需要的话 */
     }
 
     .timeline ul li div {
-        width: calc(100vw - 75px);
-        left: 30px;
-        max-width: 585px;
+        /* 如果列表项过宽，可以调整这里的宽度 */
+        max-width: 90%; /* 设置最大宽度为屏幕宽度的90% */
+        margin-left: auto; /* 居中对齐 */
+        margin-right: auto; /* 居中对齐 */
     }
 
     .post-preview {
-        width: 95%;
+        /* 确保预览组件在屏幕上居中显示 */
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .post-preview--excerpt {
-        display: none;
-    }
-
-    .post-preview--middle {
-        line-height: 19px;
-    }
-
-    .load-btn {
-        margin-left: 0;
-    }
+    /* 其他需要调整的样式... */
 }
 
 .video-wrapper {
