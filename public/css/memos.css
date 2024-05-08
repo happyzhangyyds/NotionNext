@@ -183,7 +183,7 @@ h2 {
 .memos__content:before {
     content: '';
     position: absolute;
-    background: url('/images/avatar.jpg') no-repeat;
+    background: url('https://bu.dusays.com/2024/04/23/6627ad7c08194.jpeg') no-repeat;
     background-size: contain;
     width: 40px;
     height: 40px;

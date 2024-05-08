@@ -5,6 +5,7 @@ const BlogMemos = () => {
     const [isResourcesLoaded, setResourcesLoaded] = useState(false);
 
     useEffect(() => {
+        document.title = '岁月轻歌'; // 设置页面标题
         // 并行加载CSS文件
         Promise.all([
             loadExternalResource('/css/memos.css', 'css'),
