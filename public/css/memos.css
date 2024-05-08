@@ -521,29 +521,30 @@ h2 {
     height: 152px;
 }
 
-@media (max-width: 2400px) {
+@media (max-width: 800px) {
 
     body {
-        padding: 20px; /* 增加边距，确保内容不会紧贴屏幕边缘 */
+        padding: 0; /* 移除边距，让内容填满整个屏幕宽度 */
     }
 
     .menu,
     .title {
-        font-size: 1.5rem; /* 可能需要增加字体大小以适应高分辨率屏幕 */
+        font-size: 1.5rem; /* 适应高分辨率屏幕的字体大小 */
     }
 
     .memos__content {
-        margin: 0 auto; /* 居中内容，如果需要的话 */
-        max-width: 680px; /* 设置最大宽度，防止内容在大屏幕上过于宽敞 */
+        margin: 0 auto; /* 如果需要居中内容 */
+        max-width: 100%; /* 让内容填满屏幕宽度 */
+        box-sizing: border-box; /* 确保内边距和边框不会使元素宽度超过100% */
     }
 
     .memos__userinfo {
-        margin-left: 15px; /* 调整左边距，如果需要的话 */
+        margin-left: 0; /* 如果不需要左边距，则移除它 */
     }
 
     .timeline ul li div {
         /* 如果列表项过宽，可以调整这里的宽度 */
-        max-width: 90%; /* 设置最大宽度为屏幕宽度的90% */
+        max-width: 100%; /* 让内容填满屏幕宽度 */
         margin-left: auto; /* 居中对齐 */
         margin-right: auto; /* 居中对齐 */
     }
@@ -552,6 +553,7 @@ h2 {
         /* 确保预览组件在屏幕上居中显示 */
         margin-left: auto;
         margin-right: auto;
+        max-width: 100%; /* 让内容填满屏幕宽度 */
     }
 
     /* 其他需要调整的样式... */
