@@ -521,52 +521,45 @@ h2 {
     height: 152px;
 }
 
-@media (max-width: 800px) {
-
+@media (max-width: 600px) {
     body {
-        padding: 0; /* 移除边距，让内容填满整个屏幕宽度 */
+        margin: 0; /* 移除外边距，确保没有额外的空间 */
+        padding: 0; /* 移除内边距，确保内容可以填满屏幕宽度 */
     }
-    
+
     .menu,
     .title {
-        font-size: 1.5rem; /* 适应高分辨率屏幕的字体大小 */
+        font-size: 1.5rem; /* 调整字体大小以适应屏幕 */
     }
 
     .memos__content {
-        margin: 0 auto; /* 如果需要居中内容 */
-        max-width: 100%; /* 让内容填满屏幕宽度 */
-        box-sizing: border-box; /* 确保内边距和边框不会使元素宽度超过100% */
+        width: 100%; /* 设置宽度为100%，以填满屏幕 */
+        padding: 0; /* 移除内边距 */
+        box-sizing: border-box; /* 确保内边距和边框不会增加总宽度 */
     }
 
-    .memos__userinfo {
-        margin-left: 0; /* 如果不需要左边距，则移除它 */
-    }
-
-    .timeline ul li div {
-        /* 如果列表项过宽，可以调整这里的宽度 */
-        max-width: 100%; /* 让内容填满屏幕宽度 */
-        margin-left: auto; /* 居中对齐 */
-        margin-right: auto; /* 居中对齐 */
-    }
-
+    .memos__userinfo,
+    .timeline ul li div,
     .post-preview {
-        /* 确保预览组件在屏幕上居中显示 */
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 100%; /* 让内容填满屏幕宽度 */
-    }
-    .memos__content:before {
-        display: none; /* 隐藏头像框 */
+        margin: 0; /* 移除外边距 */
+        max-width: 100%; /* 设置最大宽度为100%，以填满屏幕 */
     }
 
-    .memos__content {
-        margin: 0 auto; /* 保持内容居中 */
-        max-width: 90%; /* 或者更大的百分比，根据您的设计需求 */
-        padding: 1rem; /* 或者根据您的设计需求调整内边距 */
-        box-sizing: border-box; /* 确保内边距不会影响总宽度 */
+    .memos__content:before {
+        display: none; /* 隐藏伪元素，如头像框 */
     }
+
+    /* 移除重复的样式规则，因为已经设置了memos__content */
+    /* .memos__content {
+        margin: 0 auto;
+        max-width: 90%;
+        padding: 1rem;
+        box-sizing: border-box;
+    } */
+
     /* 其他需要调整的样式... */
 }
+
 
 .video-wrapper {
     height: 0;
