@@ -34,7 +34,11 @@ const Footer = ({ title }) => {
                    <a href='https://yayu.net/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>雅余</a>
                    <a href='https://veryjack.com/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>Jack</a>
                    <a href='https://www.hsuyeung.com' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>Hsu Yeung</a>
+                   <a href='https://crowya.com/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>鸦鸦</a> 
                    <a href='https://kuangyichen.com/' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>易浅</a>
+                   <a href='https://www.cnblogs.com/sixuwuxian' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>思绪无限</a>
+                   <a href='https://wangyurui.com' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>太隐</a> 
+                   <a href='https://www.tomatolist.com/faq.html' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>老周</a>  
                 </div>
                 <div id='footer-bottom'>
                    {siteConfig('BEI_AN') && <><i className='fa-solid fa-train' /> <span className='mr-2'>{siteConfig('BEI_AN')}</span></>}
