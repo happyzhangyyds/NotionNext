@@ -1,5 +1,9 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "headers": []
+  "headers": [],
+  "rewrites": [
+    { "source": "https://matrixcore.top/article/wdf-1", "destination": "https://hugo.matrixcore.life/blog/情绪表达/推荐/wdf-1/", "statusCode": 301 }
+  ]
 }
+
