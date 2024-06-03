@@ -20,14 +20,6 @@ export function InfoCard(props) {
   const isSlugPage = router.pathname.indexOf('/[prefix]') === 0
   return (
         <Card className='bg-[#689377] dark:bg-[#0c2710] text-white flex flex-col w-72 overflow-hidden relative'>
-            {/* 信息卡牌第一行 */}
-            <div className='flex justify-between'>
-                {/* 问候语 */}
-                <GreetingsWords />
-                <div className={`${isSlugPage ? 'absolute right-0 -mt-8 -mr-6 hover:opacity-0 hover:scale-150 blur-0' : 'cursor-pointer'} justify-center items-center flex dark:text-gray-100 transform transition-all duration-200`}>
-                    <LazyImage src={siteInfo?.icon} className='rounded-full' width={isSlugPage ? 100 : 28} alt={siteConfig('AUTHOR')} />
-                </div>
-            </div>
 
             <h2 className='text-3xl font-extrabold mt-3'>
                 {siteConfig('AUTHOR')}
