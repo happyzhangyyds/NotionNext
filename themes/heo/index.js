@@ -404,7 +404,7 @@ const Layout404 = props => {
               {/* 左侧动图 */}
               <LazyImage
                 className="error-img h-60 md:h-full p-4"
-                src={'https://bu.dusays.com/2023/11/27/65641aa9deed7.jpg'}
+                src={'https://bu.dusays.com/2024/04/23/6627bc1896a6d.jpeg'}
               ></LazyImage>
 
               {/* 右侧文字 */}
