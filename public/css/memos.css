@@ -149,7 +149,7 @@ h2 {
 } 
 
 .memos {
-    min-height: 300px;
+    min-height: 100px;
     text-align: left;
     width: 100%;
     line-height: 2;
@@ -183,7 +183,6 @@ h2 {
 .memos__content:before {
     content: '';
     position: absolute;
-    background: url('https://bu.dusays.com/2024/04/23/6627ad7c08194.jpeg') no-repeat;
     background-size: contain;
     width: 40px;
     height: 40px;
