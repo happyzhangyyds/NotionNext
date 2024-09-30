@@ -41,8 +41,15 @@ const Footer = ({ title }) => {
                    <a href='https://www.tomatolist.com/faq.html' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>老周</a>  
                 </div>
                 <div id='footer-bottom'>
-                   {siteConfig('BEI_AN') && <><i className='fa-solid fa-train' /> <span className='mr-2'>{siteConfig('BEI_AN')}</span></>}
-                </div>
+                    {siteConfig('BEI_AN') && (
+                    <>
+                     <i className='fa-solid fa-shield-halved' />{' '}
+                      <a href='https://beian.miit.gov.cn/#/Integrated/recordQuery' target='_blank' rel='noopener noreferrer'>
+                      <span className='mr-2'>{siteConfig('BEI_AN')}</span>
+                     </a>
+                     </>
+                   )}
+                 </div>
           </div>
         </footer >
   )
