@@ -40,16 +40,19 @@ const Footer = ({ title }) => {
                    <a href='https://wangyurui.com' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>太隐</a> 
                    <a href='https://www.tomatolist.com/faq.html' style={{ marginRight: '10px' }} className='underline font-bold  dark:text-gray-300'>老周</a>  
                 </div>
-                <div id='footer-bottom'>
-                    {siteConfig('BEI_AN') && (
-                    <>
-                     <i className='fa-solid fa-shield-halved' />{' '}
-                      <a href='https://beian.miit.gov.cn/#/Integrated/recordQuery' target='_blank' rel='noopener noreferrer'>
-                      <span className='mr-2'>{siteConfig('BEI_AN')}</span>
-                     </a>
-                     </>
-                   )}
-                 </div>
+                <div id='footer-bottom' style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+  {siteConfig('BEI_AN') && (
+    <a href='https://beian.miit.gov.cn/#/Integrated/recordQuery' target='_blank' rel='noopener noreferrer' style={{ display: 'flex', alignItems: 'center' }}>
+      <img src='https://bu.dusays.com/2024/10/18/67124dd4ce55e.png' alt='备案图标' style={{ width: '20px', height: '20px', marginRight: '5px' }} />
+      <span>{siteConfig('BEI_AN')}</span>
+    </a>
+  )}
+  <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44011102484010" rel="noreferrer" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
+    <img src="https://bu.dusays.com/2024/10/18/67124b6f6b416.png" alt="公安备案图标" style={{ width: '20px', height: '20px', marginRight: '5px' }} />
+    粤公网安备44011102484010
+  </a>
+</div>
+
           </div>
         </footer >
   )
