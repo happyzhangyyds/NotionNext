@@ -55,7 +55,7 @@ FONT_STYLE: process.env.NEXT_PUBLIC_FONT_STYLE || 'font-serif font-light',
 
 // 字体CSS
 FONT_URL: [
-  'https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css',
+  'https://store.matrixcore.love/style.css',
 ],
 
 // 无衬线字体
@@ -69,7 +69,7 @@ FONT_SERIF: [
 ],
 
 // font-awesome 字体图标地址
-FONT_AWESOME: process.env.NEXT_PUBLIC_FONT_AWESOME_PATH || 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
+FONT_AWESOME: process.env.NEXT_PUBLIC_FONT_AWESOME_PATH || 'https://store.matrixcore.love/all.min.css',
 
 // 在 HTML 中添加预加载链接
 // <link rel="preload" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
