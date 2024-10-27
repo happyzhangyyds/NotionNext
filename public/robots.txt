@@ -1,0 +1,11 @@
+    # *
+    User-agent: *
+    Disallow: /
+  
+    # Host
+    Host: https://matrixcore.love
+  
+    # Sitemaps
+    Sitemap: https://matrixcore.love/sitemap.xml
+  
+    
