@@ -47,60 +47,20 @@
 // Memos Start
 var users = [
     {
-        host: 'https://memos.matrixcore.top',
-        limit: '1',
+        host: 'https://memos.matrixcore.love',
+        limit: '3',
         creatorId: '1',
         domId: '#memos1',
         username: 'matrixcore',
         name: 'MatrixCore'
     },
     {
-        host: 'https://memos.matrixcore.top',
-        limit: '1',
-        creatorId: '3',
-        domId: '#memos2',
-        username: 'Changing',
-        name: 'Changing'
-    },
-    {
-        host: 'https://memos.matrixcore.top',
-        limit: '1',
-        creatorId: '4',
-        domId: '#memos3',
-        username: 'wind',
-        name: 'wind'
-    },
-    {
-        host: 'https://memos.matrixcore.top',
-        limit: '1',
+        host: 'https://memos.matrixcore.love',
+        limit: '3',
         creatorId: '5',
-        domId: '#memos4',
+        domId: '#memos2',
         username: '问心',
         name: '微风起'
-    },
-    {
-        host: 'https://memos.matrixcore.top',
-        limit: '1',
-        creatorId: '7',
-        domId: '#memos5',
-        username: '橙汁er',
-        name: '橙汁er'
-    },
-    {
-        host: 'https://memos.matrixcore.top',
-        limit: '1',
-        creatorId: '8',
-        domId: '#memos6',
-        username: 'Will',
-        name: 'Will'
-    },
-    {
-        host: 'https://memos.matrixcore.top',
-        limit: '1',
-        creatorId: '9',
-        domId: '#memos7',
-        username: '🐳',
-        name: 'yu'
     },
     // Add more users as needed
 ];
