@@ -106,14 +106,6 @@ const getSEOMeta = (props, router, global) => {
         slug: 'archive',
         type: 'website'
       }
-    case '/memos':
-      return {
-        title: `Memos | ${siteConfig('TITLE')}`, // 假设 locale.NAV.MEMOS 存在且包含页面标题
-        description: '这里是我的个人随笔和日常记录', // 自定义描述
-        image: siteConfig('HOME_BANNER_IMAGE'), // 假设您有为 memos 页面特定设置的图像
-        slug: 'memos',
-        type: 'website'
-      }
     case '/page/[page]':
       return {
         title: `${page} | Page | ${siteConfig('TITLE')}`,
