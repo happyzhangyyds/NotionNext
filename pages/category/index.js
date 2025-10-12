@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 import { getGlobalData } from '@/lib/notion/getNotionData'
 import React from 'react'
 import BLOG from '@/blog.config'
 import { useRouter } from 'next/router'
 import { getLayoutByTheme } from '@/themes/theme'
 import { siteConfig } from '@/lib/config'
+=======
+import BLOG from '@/blog.config'
+import { siteConfig } from '@/lib/config'
+import { getGlobalData } from '@/lib/db/getSiteData'
+import { DynamicLayout } from '@/themes/theme'
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 
 /**
  * 分类首页
@@ -11,6 +18,7 @@ import { siteConfig } from '@/lib/config'
  * @returns
  */
 export default function Category(props) {
+<<<<<<< HEAD
   // 根据页面路径加载不同Layout文件
   const Layout = getLayoutByTheme({ theme: siteConfig('THEME'), router: useRouter() })
 
@@ -23,5 +31,25 @@ export async function getStaticProps() {
   return {
     props,
     revalidate: parseInt(BLOG.NEXT_REVALIDATE_SECOND)
+=======
+  const theme = siteConfig('THEME', BLOG.THEME, props.NOTION_CONFIG)
+  return (
+    <DynamicLayout theme={theme} layoutName='LayoutCategoryIndex' {...props} />
+  )
+}
+
+export async function getStaticProps({ locale }) {
+  const props = await getGlobalData({ from: 'category-index-props', locale })
+  delete props.allPages
+  return {
+    props,
+    revalidate: process.env.EXPORT
+      ? undefined
+      : siteConfig(
+          'NEXT_REVALIDATE_SECOND',
+          BLOG.NEXT_REVALIDATE_SECOND,
+          props.NOTION_CONFIG
+        )
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   }
 }

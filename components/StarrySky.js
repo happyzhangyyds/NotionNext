@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* eslint-disable */
 import  { useEffect } from 'react'
 
@@ -9,10 +10,24 @@ const StarrySky = () => {
     <div className="relative">
       <canvas id="starry-sky-vixcity" style={{zIndex:5}} className="top-0 fixed pointer-events-none"></canvas>
     </div>
+=======
+import { useEffect } from 'react'
+import { loadExternalResource } from '@/lib/utils'
+
+const StarrySky = () => {
+  useEffect(() => {
+    loadExternalResource('/js/starrySky.js', 'js').then(url => {
+      window.renderStarrySky && window.renderStarrySky()
+    })
+  }, [])
+  return (
+    <></>
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   )
 }
 
 export default StarrySky
+<<<<<<< HEAD
 
 /**
  * 创建星空雨
@@ -129,3 +144,5 @@ function renderStarrySky() {
         window.requestAnimationFrame(t)
     })()
 }
+=======
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a

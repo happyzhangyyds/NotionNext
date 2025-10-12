@@ -2,5 +2,13 @@
   "singleQuote": true,
   "semi": false,
   "trailingComma": "none",
+<<<<<<< HEAD
   "arrowParens": "avoid"
+=======
+  "arrowParens": "avoid",
+  "printWidth": 80,
+  "bracketSpacing": true,
+  "jsxSingleQuote": true,
+  "jsxBracketSameLine": true
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 }

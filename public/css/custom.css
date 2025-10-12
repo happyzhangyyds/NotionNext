@@ -1,5 +1,15 @@
 /* 静态文件导入 自定义样式*/
+<<<<<<< HEAD
 .dark footer{
 background: none;
 }
 
+=======
+
+#theme-fukasawa .sideLeft hr{
+    opacity: .04;
+}
+.fa-info:before {
+    content: "\f05a";
+}
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a

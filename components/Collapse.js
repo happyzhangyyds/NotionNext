@@ -2,6 +2,7 @@ import { useEffect, useImperativeHandle, useRef } from 'react'
 
 /**
  * 折叠面板组件，支持水平折叠、垂直折叠
+<<<<<<< HEAD
  * @param {type:['horizontal','vertical'],isOpen} props
  * @returns
  */
@@ -9,6 +10,20 @@ const Collapse = props => {
   const { collapseRef } = props
   const ref = useRef(null)
   const type = props.type || 'vertical'
+=======
+ * @param {type:['horizontal','vertical'], isOpen} props
+ * @returns
+ */
+const Collapse = ({
+  type = 'vertical',
+  isOpen = false,
+  children,
+  onHeightChange,
+  className,
+  collapseRef
+}) => {
+  const ref = useRef(null)
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 
   useImperativeHandle(collapseRef, () => {
     return {
@@ -17,7 +32,11 @@ const Collapse = props => {
        * @param {*} param0
        */
       updateCollapseHeight: ({ height, increase }) => {
+<<<<<<< HEAD
         if (props.isOpen) {
+=======
+        if (isOpen) {
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
           ref.current.style.height = ref.current.scrollHeight
           ref.current.style.height = 'auto'
         }
@@ -26,9 +45,15 @@ const Collapse = props => {
   })
 
   /**
+<<<<<<< HEAD
      * 折叠
      * @param {*} element
      */
+=======
+   * 折叠
+   * @param {*} element
+   */
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   const collapseSection = element => {
     const sectionHeight = element.scrollHeight
     const sectionWidth = element.scrollWidth
@@ -51,9 +76,15 @@ const Collapse = props => {
   }
 
   /**
+<<<<<<< HEAD
      * 展开
      * @param {*} element
      */
+=======
+   * 展开
+   * @param {*} element
+   */
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   const expandSection = element => {
     const sectionHeight = element.scrollHeight
     const sectionWidth = element.scrollWidth
@@ -76,12 +107,17 @@ const Collapse = props => {
   }
 
   useEffect(() => {
+<<<<<<< HEAD
     if (props.isOpen) {
+=======
+    if (isOpen) {
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
       expandSection(ref.current)
     } else {
       collapseSection(ref.current)
     }
     // 通知父组件高度变化
+<<<<<<< HEAD
     props?.onHeightChange && props.onHeightChange({ height: ref.current.scrollHeight, increase: props.isOpen })
   }, [props.isOpen])
 
@@ -92,5 +128,27 @@ const Collapse = props => {
   )
 }
 Collapse.defaultProps = { isOpen: false }
+=======
+    onHeightChange &&
+      onHeightChange({
+        height: ref.current.scrollHeight,
+        increase: isOpen
+      })
+  }, [isOpen])
+
+  return (
+    <div
+      ref={ref}
+      style={
+        type === 'vertical'
+          ? { height: '0px', willChange: 'height' }
+          : { width: '0px', willChange: 'width' }
+      }
+      className={`${className || ''} overflow-hidden duration-300`}>
+      {children}
+    </div>
+  )
+}
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 
 export default Collapse

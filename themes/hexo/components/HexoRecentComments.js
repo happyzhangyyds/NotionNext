@@ -2,7 +2,11 @@ import { useEffect, useState } from 'react'
 import { siteConfig } from '@/lib/config'
 import Card from '@/themes/hexo/components/Card'
 import { useGlobal } from '@/lib/global'
+<<<<<<< HEAD
 import Link from 'next/link'
+=======
+import SmartLink from '@/components/SmartLink'
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 import { RecentComments } from '@waline/client'
 
 /**
@@ -36,7 +40,11 @@ const HexoRecentComments = (props) => {
             {!onLoading && comments && comments.length > 0 && comments.map((comment) => <div key={comment.objectId} className='pb-2 pl-1'>
                 <div className='dark:text-gray-200 text-sm waline-recent-content wl-content' dangerouslySetInnerHTML={{ __html: comment.comment }} />
                 <div className='dark:text-gray-400 text-gray-400  text-sm text-right cursor-pointer hover:text-red-500 hover:underline pt-1 pr-2'>
+<<<<<<< HEAD
                     <Link href={{ pathname: comment.url, hash: comment.objectId, query: { target: 'comment' } }}>--{comment.nick}</Link>
+=======
+                    <SmartLink href={{ pathname: comment.url, hash: comment.objectId, query: { target: 'comment' } }}>--{comment.nick}</SmartLink>
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
                 </div>
             </div>)}
 

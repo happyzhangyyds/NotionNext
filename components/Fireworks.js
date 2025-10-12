@@ -3,8 +3,14 @@
  * custom by hexo-theme-yun @YunYouJun
  */
 import { useEffect } from 'react'
+<<<<<<< HEAD
 import anime from 'animejs'
 import { siteConfig } from '@/lib/config'
+=======
+// import anime from 'animejs'
+import { siteConfig } from '@/lib/config'
+import { loadExternalResource } from '@/lib/utils'
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 
 /**
  * 鼠标点击烟花特效
@@ -14,6 +20,7 @@ const Fireworks = () => {
   const fireworksColor = siteConfig('FIREWORKS_COLOR')
 
   useEffect(() => {
+<<<<<<< HEAD
     createFireworks({ colors: fireworksColor })
   }, [])
   return <canvas id='fireworks' className='fireworks'></canvas>
@@ -214,3 +221,37 @@ function createFireworks(config) {
     false
   )
 }
+=======
+    // 异步加载
+    function loadFireworks() {
+      loadExternalResource(
+        'https://cdnjs.snrat.com/ajax/libs/animejs/3.2.1/anime.min.js',
+        'js'
+      ).then(() => {
+        loadExternalResource('/js/fireworks.js', 'js').then(() => {
+          if (window.anime && window.createFireworks) {
+            window.createFireworks({
+              config: { colors: fireworksColor },
+              anime: window.anime
+            })
+          }
+        })
+      })
+    }
+
+    loadFireworks()
+
+    return () => {
+      // 在组件卸载时清理资源
+      const fireworksElements = document.getElementsByClassName('fireworks')
+      while (fireworksElements.length > 0) {
+        fireworksElements[0].parentNode.removeChild(fireworksElements[0])
+      }
+    }
+  }, [])
+
+  return <></>
+}
+
+export default Fireworks
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a

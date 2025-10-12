@@ -43,9 +43,21 @@ const PrismMac = () => {
       loadExternalResource('/css/prism-mac-style.css', 'css')
     }
     // 加载prism样式
+<<<<<<< HEAD
     loadPrismThemeCSS(isDarkMode, prismThemeSwitch, prismThemeDarkPath, prismThemeLightPath, prismThemePrefixPath)
     // 折叠代码
     loadExternalResource(prismjsAutoLoader, 'js').then((url) => {
+=======
+    loadPrismThemeCSS(
+      isDarkMode,
+      prismThemeSwitch,
+      prismThemeDarkPath,
+      prismThemeLightPath,
+      prismThemePrefixPath
+    )
+    // 折叠代码
+    loadExternalResource(prismjsAutoLoader, 'js').then(url => {
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
       if (window?.Prism?.plugins?.autoloader) {
         window.Prism.plugins.autoloader.languages_path = prismjsPath
       }
@@ -62,7 +74,17 @@ const PrismMac = () => {
 /**
  * 加载Prism主题样式
  */
+<<<<<<< HEAD
 const loadPrismThemeCSS = (isDarkMode, prismThemeSwitch, prismThemeDarkPath, prismThemeLightPath, prismThemePrefixPath) => {
+=======
+const loadPrismThemeCSS = (
+  isDarkMode,
+  prismThemeSwitch,
+  prismThemeDarkPath,
+  prismThemeLightPath,
+  prismThemePrefixPath
+) => {
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   let PRISM_THEME
   let PRISM_PREVIOUS
   if (prismThemeSwitch) {
@@ -73,8 +95,19 @@ const loadPrismThemeCSS = (isDarkMode, prismThemeSwitch, prismThemeDarkPath, pri
       PRISM_THEME = prismThemeLightPath
       PRISM_PREVIOUS = prismThemeDarkPath
     }
+<<<<<<< HEAD
     const previousTheme = document.querySelector(`link[href="${PRISM_PREVIOUS}"]`)
     if (previousTheme) {
+=======
+    const previousTheme = document.querySelector(
+      `link[href="${PRISM_PREVIOUS}"]`
+    )
+    if (
+      previousTheme &&
+      previousTheme.parentNode &&
+      previousTheme.parentNode.contains(previousTheme)
+    ) {
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
       previousTheme.parentNode.removeChild(previousTheme)
     }
     loadExternalResource(PRISM_THEME, 'css')
@@ -103,6 +136,7 @@ const renderCollapseCode = (codeCollapse, codeCollapseExpandDefault) => {
     const collapseWrapper = document.createElement('div')
     collapseWrapper.className = 'collapse-wrapper w-full py-2'
     const panelWrapper = document.createElement('div')
+<<<<<<< HEAD
     panelWrapper.className = 'border dark:border-gray-600 rounded-md hover:border-indigo-500 duration-200 transition-colors'
 
     const header = document.createElement('div')
@@ -111,6 +145,19 @@ const renderCollapseCode = (codeCollapse, codeCollapseExpandDefault) => {
 
     const panel = document.createElement('div')
     panel.className = 'invisible h-0 transition-transform duration-200 border-t border-gray-300'
+=======
+    panelWrapper.className =
+      'border dark:border-gray-600 rounded-md hover:border-indigo-500 duration-200 transition-colors'
+
+    const header = document.createElement('div')
+    header.className =
+      'flex justify-between items-center px-4 py-2 cursor-pointer select-none'
+    header.innerHTML = `<h3 class="text-lg font-medium">${language}</h3><svg class="transition-all duration-200 w-5 h-5 transform rotate-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.293 6.293a1 1 0 0 1 1.414 0L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg>`
+
+    const panel = document.createElement('div')
+    panel.className =
+      'invisible h-0 transition-transform duration-200 border-t border-gray-300'
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 
     panelWrapper.appendChild(header)
     panelWrapper.appendChild(panel)
@@ -139,13 +186,22 @@ const renderCollapseCode = (codeCollapse, codeCollapseExpandDefault) => {
 /**
  * 将mermaid语言 渲染成图片
  */
+<<<<<<< HEAD
 const renderMermaid = async(mermaidCDN) => {
   const observer = new MutationObserver(async mutationsList => {
+=======
+const renderMermaid = mermaidCDN => {
+  const observer = new MutationObserver(mutationsList => {
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
     for (const m of mutationsList) {
       if (m.target.className === 'notion-code language-mermaid') {
         const chart = m.target.querySelector('code').textContent
         if (chart && !m.target.querySelector('.mermaid')) {
+<<<<<<< HEAD
           const mermaidChart = document.createElement('div')
+=======
+          const mermaidChart = document.createElement('pre')
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
           mermaidChart.className = 'mermaid'
           mermaidChart.innerHTML = chart
           m.target.appendChild(mermaidChart)
@@ -172,7 +228,14 @@ const renderMermaid = async(mermaidCDN) => {
     }
   })
   if (document.querySelector('#notion-article')) {
+<<<<<<< HEAD
     observer.observe(document.querySelector('#notion-article'), { attributes: true, subtree: true })
+=======
+    observer.observe(document.querySelector('#notion-article'), {
+      attributes: true,
+      subtree: true
+    })
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   }
 }
 
@@ -234,7 +297,14 @@ const fixCodeLineStyle = () => {
       }
     }
   })
+<<<<<<< HEAD
   observer.observe(document.querySelector('#notion-article'), { attributes: true, subtree: true })
+=======
+  observer.observe(document.querySelector('#notion-article'), {
+    attributes: true,
+    subtree: true
+  })
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   setTimeout(() => {
     const preCodes = document.querySelectorAll('pre.notion-code')
     for (const preCode of preCodes) {

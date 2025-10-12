@@ -24,7 +24,13 @@ export default function DifyChatbot() {
     return () => {
       // 在组件卸载时清理 script 标签
       const existingScript = document.getElementById(siteConfig('DIFY_CHATBOT_TOKEN')); // 注意调用 siteConfig()
+<<<<<<< HEAD
       if (existingScript) document.body.removeChild(existingScript);
+=======
+      if (existingScript && existingScript.parentNode && existingScript.parentNode.contains(existingScript)) {
+        existingScript.parentNode.removeChild(existingScript);
+      }
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
     };
   }, []); // 注意依赖数组为空，意味着脚本将仅在加载页面时执行一次
 

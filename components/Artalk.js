@@ -20,6 +20,7 @@ const Artalk = ({ siteInfo }) => {
 
   const initArtalk = async () => {
     await loadExternalResource(artalkCss, 'css')
+<<<<<<< HEAD
     window?.Artalk?.init({
       server: artalkServer, // 后端地址
       el: '#artalk', // 容器元素
@@ -32,6 +33,34 @@ const Artalk = ({ siteInfo }) => {
   return (
         <div id="artalk"></div>
   )
+=======
+    const artalk = window?.Artalk?.init({
+      server: artalkServer,
+      el: '#artalk',
+      locale: artalkLocale,
+      site: site,
+      darkMode: document.documentElement.classList.contains('dark')
+    })
+
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === 'class') {
+          const isDark = document.documentElement.classList.contains('dark')
+          artalk?.setDarkMode(isDark)
+        }
+      })
+    })
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    })
+
+    return () => observer.disconnect()
+  }
+
+  return <div id="artalk"></div>
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 }
 
 export default Artalk

@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import React, { createRef } from 'react'
 import { init } from '@waline/client'
 import { useRouter } from 'next/router'
 import '@waline/client/dist/waline.css'
+=======
+import  { createRef, useEffect } from 'react'
+import { init } from '@waline/client'
+import { useRouter } from 'next/router'
+import '@waline/client/style'
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 import { siteConfig } from '@/lib/config'
 
 const path = ''
@@ -21,7 +28,11 @@ const WalineComponent = (props) => {
     }
   }
 
+<<<<<<< HEAD
   React.useEffect(() => {
+=======
+  useEffect(() => {
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
     if (!waline) {
       waline = init({
         ...props,

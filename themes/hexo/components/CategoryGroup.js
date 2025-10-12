@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import Link from 'next/link'
+=======
+import SmartLink from '@/components/SmartLink'
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 
 const CategoryGroup = ({ currentCategory, categories }) => {
   if (!categories) {
@@ -9,7 +13,11 @@ const CategoryGroup = ({ currentCategory, categories }) => {
       {categories.map(category => {
         const selected = currentCategory === category.name
         return (
+<<<<<<< HEAD
           <Link
+=======
+          <SmartLink
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
             key={category.name}
             href={`/category/${category.name}`}
             passHref
@@ -20,7 +28,11 @@ const CategoryGroup = ({ currentCategory, categories }) => {
 
             <div> <i className={`mr-2 fas ${selected ? 'fa-folder-open' : 'fa-folder'}`} />{category.name}({category.count})</div>
 
+<<<<<<< HEAD
           </Link>
+=======
+          </SmartLink>
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
         );
       })}
     </div>

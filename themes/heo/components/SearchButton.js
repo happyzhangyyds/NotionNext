@@ -1,9 +1,18 @@
 import { siteConfig } from '@/lib/config'
 import { useGlobal } from '@/lib/global'
+<<<<<<< HEAD
 import { useRouter } from 'next/router'
 import AlgoliaSearchModal from '@/components/AlgoliaSearchModal'
 import { useRef } from 'react'
 
+=======
+import dynamic from 'next/dynamic'
+import { useRouter } from 'next/router'
+import { useRef } from 'react'
+
+const AlgoliaSearchModal = dynamic(() => import('@/components/AlgoliaSearchModal'), { ssr: false })
+
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 /**
  * 搜索按钮
  * @returns

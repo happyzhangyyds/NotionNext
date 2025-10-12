@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* eslint-disable */
 import { useEffect } from 'react'
 const id = 'canvasNestCreated'
@@ -12,11 +13,23 @@ const Nest = () => {
   useEffect(() => {
     createNest()
     return () => destroyNest()
+=======
+import { useEffect } from 'react'
+import { loadExternalResource } from '@/lib/utils'
+
+const Nest = () => {
+  useEffect(() => {
+    loadExternalResource('/js/nest.js', 'js').then(url => {
+      window.createNest && window.createNest()
+    })
+    return () => window.destroyNest && window.destroyNest()
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   }, [])
   return <></>
 }
 
 export default Nest
+<<<<<<< HEAD
 
 /**
  * 创建连接点
@@ -122,3 +135,5 @@ function createNest() {
     o()
   }, 100)
 }
+=======
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a

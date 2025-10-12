@@ -1,5 +1,6 @@
 /* eslint-disable */
 import { useEffect } from 'react'
+<<<<<<< HEAD
 const  id = 'canvasFlutteringRibbon'
 export const FlutteringRibbon = () => {
      const destroyRibbon = ()=>{
@@ -320,3 +321,20 @@ function createFlutteringRibbon() {
     animateSections: !0
   })
 }
+=======
+import { loadExternalResource } from '@/lib/utils'
+
+export const FlutteringRibbon = () => {
+  useEffect(() => {
+    loadExternalResource('/js/flutteringRibbon.js', 'js').then(url => {
+      window.createFlutteringRibbon && window.createFlutteringRibbon()
+    })
+
+    return () =>
+      window.destroyFlutteringRibbon && window.destroyFlutteringRibbon()
+  }, [])
+  return <></>
+}
+
+export default FlutteringRibbon
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a

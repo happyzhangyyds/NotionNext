@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import subscribeToMailchimpApi from '@/lib/mailchimp'
+=======
+import subscribeToMailchimpApi from '@/lib/plugins/mailchimp'
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 
 /**
  * 接受邮件订阅

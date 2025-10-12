@@ -2,13 +2,23 @@ const BLOG = require('./blog.config')
 const { fontFamilies } = require('./lib/font')
 
 module.exports = {
+<<<<<<< HEAD
   content: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './themes/**/*.js'],
+=======
+  content: [
+    './pages/**/*.js',
+    './components/**/*.js',
+    './layouts/**/*.js',
+    './themes/**/*.js'
+  ],
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   darkMode: BLOG.APPEARANCE === 'class' ? 'media' : 'class', // or 'media' or 'class'
   theme: {
     fontFamily: fontFamilies,
     screens: {
       sm: '540px',
       // => @media (min-width: 576px) { ... }
+<<<<<<< HEAD
 
       md: '720px',
       // => @media (min-width: 768px) { ... }
@@ -21,6 +31,15 @@ module.exports = {
 
       '2xl': '1320px'
       // => @media (min-width: 1400px) { ... }
+=======
+      md: '720px',
+      // => @media (min-width: 768px) { ... }
+      lg: '960px',
+      // => @media (min-width: 992px) { ... }
+      xl: '1140px',
+      // => @media (min-width: 1200px) { ... }
+      '2xl': '1536px'
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
     },
     container: {
       center: true,
@@ -64,7 +83,13 @@ module.exports = {
       },
       maxWidth: {
         side: '14rem',
+<<<<<<< HEAD
         '9/10': '90%'
+=======
+        '9/10': '90%',
+        'screen-3xl': '1440px',
+        'screen-4xl': '1560px'
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
       },
       boxShadow: {
         input: '0px 7px 20px rgba(0, 0, 0, 0.03)',

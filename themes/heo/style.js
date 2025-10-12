@@ -5,10 +5,17 @@
  * @returns
  */
 const Style = () => {
+<<<<<<< HEAD
   return <style jsx global>{`
     body {
         background-color: #fff2e2;
         overflow-x: hidden;
+=======
+  return (
+    <style jsx global>{`
+      body {
+        background-color: #f7f9fe;
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
       }
 
       // 公告栏中的字体固定白色
@@ -62,7 +69,15 @@ const Style = () => {
         }
       }
     `}</style>
+<<<<<<< HEAD
     
 }
 
 export { Style }
+=======
+  )
+}
+
+export { Style }
+
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a

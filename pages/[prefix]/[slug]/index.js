@@ -1,4 +1,5 @@
 import BLOG from '@/blog.config'
+<<<<<<< HEAD
 import { getPostBlocks } from '@/lib/notion'
 import { getGlobalData } from '@/lib/notion/getNotionData'
 import { idToUuid } from 'notion-utils'
@@ -6,6 +7,13 @@ import { getNotion } from '@/lib/notion/getNotion'
 import Slug, { getRecommendPost } from '..'
 import { uploadDataToAlgolia } from '@/lib/algolia'
 import { checkContainHttp } from '@/lib/utils'
+=======
+import { siteConfig } from '@/lib/config'
+import { getGlobalData, getPost } from '@/lib/db/getSiteData'
+import { checkSlugHasOneSlash, processPostData } from '@/lib/utils/post'
+import { idToUuid } from 'notion-utils'
+import Slug from '..'
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 
 /**
  * 根据notion的slug访问页面
@@ -14,7 +22,11 @@ import { checkContainHttp } from '@/lib/utils'
  * @returns
  */
 const PrefixSlug = props => {
+<<<<<<< HEAD
   return <Slug {...props}/>
+=======
+  return <Slug {...props} />
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 }
 
 export async function getStaticPaths() {
@@ -27,14 +39,31 @@ export async function getStaticPaths() {
 
   const from = 'slug-paths'
   const { allPages } = await getGlobalData({ from })
+<<<<<<< HEAD
   const paths = allPages?.filter(row => checkSlug(row))
     .map(row => ({ params: { prefix: row.slug.split('/')[0], slug: row.slug.split('/')[1] } }))
+=======
+
+  // 根据slug中的 / 分割成prefix和slug两个字段 ; 例如 article/test
+  // 最终用户可以通过  [domain]/[prefix]/[slug] 路径访问，即这里的 [domain]/article/test
+  const paths = allPages
+    ?.filter(row => checkSlugHasOneSlash(row))
+    .map(row => ({
+      params: { prefix: row.slug.split('/')[0], slug: row.slug.split('/')[1] }
+    }))
+
+  // 增加一种访问路径 允许通过 [category]/[slug] 访问文章
+  // 例如文章slug 是 test ，然后文章的分类category是 production
+  // 则除了 [domain]/[slug] 以外，还支持分类名访问: [domain]/[category]/[slug]
+
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   return {
     paths: paths,
     fallback: true
   }
 }
 
+<<<<<<< HEAD
 export async function getStaticProps({ params: { prefix, slug } }) {
   let fullSlug = prefix + '/' + slug
   if (JSON.parse(BLOG.PSEUDO_STATIC)) {
@@ -47,17 +76,35 @@ export async function getStaticProps({ params: { prefix, slug } }) {
   // 在列表内查找文章
   props.post = props?.allPages?.find((p) => {
     return (p.type.indexOf('Menu') < 0) && (p.slug === fullSlug || p.id === idToUuid(fullSlug))
+=======
+export async function getStaticProps({ params: { prefix, slug }, locale }) {
+  const fullSlug = prefix + '/' + slug
+  const from = `slug-props-${fullSlug}`
+  const props = await getGlobalData({ from, locale })
+
+  // 在列表内查找文章
+  props.post = props?.allPages?.find(p => {
+    return (
+      p.type.indexOf('Menu') < 0 &&
+      (p.slug === slug || p.slug === fullSlug || p.id === idToUuid(fullSlug))
+    )
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   })
 
   // 处理非列表内文章的内信息
   if (!props?.post) {
     const pageId = slug.slice(-1)[0]
     if (pageId.length >= 32) {
+<<<<<<< HEAD
       const post = await getNotion(pageId)
+=======
+      const post = await getPost(pageId)
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
       props.post = post
     }
   }
 
+<<<<<<< HEAD
   // 无法获取文章
   if (!props?.post) {
     props.post = null
@@ -99,4 +146,24 @@ function checkSlug(row) {
   }
   return (slug.match(/\//g) || []).length === 1 && !checkContainHttp(slug) && row.type.indexOf('Menu') < 0
 }
+=======
+  if (!props?.post) {
+    // 无法获取文章
+    props.post = null
+  } else {
+    await processPostData(props, from)
+  }
+  return {
+    props,
+    revalidate: process.env.EXPORT
+      ? undefined
+      : siteConfig(
+          'NEXT_REVALIDATE_SECOND',
+          BLOG.NEXT_REVALIDATE_SECOND,
+          props.NOTION_CONFIG
+        )
+  }
+}
+
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 export default PrefixSlug

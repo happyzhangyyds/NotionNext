@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+=======
+# Free Installation and Usage Guide
+
+Click here to access the help documentation: NotionNext Help Manual - (Completely Free)
+
+## Rights Statement
+
+This project's tutorial is a free and open resource intended solely for personal learning use. It is strictly prohibited for any individual or organization to use this tutorial for commercial purposes, including but not limited to direct sales, indirect charges, or any other forms of profit. When reproducing, copying, or sharing this tutorial, the author's information must be retained, and the source clearly cited.
+
+This project only offers paid consultation services authorized by the author's team. Please be vigilant against fraud. Any unauthorized paid services may be subject to legal risks.
+
+You can set up your personal website in just a few minutes. Here is the link to my free tutorial:
+
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 # NotionNext
 
 <p>
@@ -31,6 +46,7 @@ Live Demoï¼š[https://preview.tangly1024.com/](https://preview.tangly1024.com/) ï
 |--|--|--|--|
 | <img src='./docs/theme-next.png' width='300'/> [NEXT](https://preview.tangly1024.com/?theme=next)  | <img src='./docs/theme-medium.png' width='300'/> [MEDIUM](https://preview.tangly1024.com/?theme=medium) | <img src='./docs/theme-hexo.png' width='300'/> [HEXO](https://preview.tangly1024.com/?theme=hexo) | <img src='./docs/theme-fukasawa.png' width='300'/> [FUKASAWA](https://preview.tangly1024.com/?theme=fukasawa) |
 
+<<<<<<< HEAD
 ## Get Start!
 
 It only takes a few minutes to set up your personal site:
@@ -45,6 +61,8 @@ It only takes a few minutes to set up your personal site:
 
 - [Version History - Check Feature Highlights for Each Version](https://tangly1024.com/article/notion-next-changelogs)
 
+=======
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 ## Acknowledgements
 
 Special thanks to Craig Hart for initiating the Nobelium project.
@@ -55,6 +73,7 @@ Special thanks to Craig Hart for initiating the Nobelium project.
 
 ## Contributors
 
+<<<<<<< HEAD
 <table>
   <tr align="left">
   <td align="center">
@@ -172,6 +191,11 @@ Special thanks to Craig Hart for initiating the Nobelium project.
 </tr>
 </table>
 
+=======
+This project exists thanks to all the people who contribute.
+
+[![Contributors](https://contrib.rocks/image?repo=tangly1024/NotionNext)](https://github.com/tangly1024/NotionNext/graphs/contributors)
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 
 ## Technologies Used
 

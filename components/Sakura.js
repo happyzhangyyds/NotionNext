@@ -1,5 +1,6 @@
 /* eslint-disable */
 import { useEffect } from 'react'
+<<<<<<< HEAD
 const id = 'canvas_sakura'
 const Sakura = () => {
   const destroySakura = ()=>{
@@ -12,10 +13,21 @@ const Sakura = () => {
   useEffect(() => {
     createSakura({})
     return () => destroySakura()
+=======
+import { loadExternalResource } from '@/lib/utils'
+
+const Sakura = () => {
+  useEffect(() => {
+    loadExternalResource('/js/sakura.js', 'js').then(url => {
+        window.createSakura && window.createSakura({})
+    })
+    return () => window.destroySakura && window.destroySakura()
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   }, [])
   return <></>
 }
 
+<<<<<<< HEAD
 export default Sakura
 
 /**
@@ -190,3 +202,6 @@ function createSakura() {
     }
   }
 }
+=======
+export default Sakura
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a

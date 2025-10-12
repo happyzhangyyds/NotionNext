@@ -2,7 +2,11 @@
  * @author https://github.com/txs
  * 当配置文件 CODE_MAC_BAR 开启时，此样式会被动态引入，将开启代码组件左上角的mac图标
  **/
+<<<<<<< HEAD
  .code-toolbar {
+=======
+.code-toolbar {
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   position: relative;
   padding-top: 0 !important;
   padding-bottom: 0 !important;

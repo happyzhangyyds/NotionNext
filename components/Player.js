@@ -19,7 +19,14 @@ const Player = () => {
   const musicPlayerEnable = siteConfig('MUSIC_PLAYER')
   const musicPlayerCDN = siteConfig('MUSIC_PLAYER_CDN_URL')
   const musicMetingEnable = siteConfig('MUSIC_PLAYER_METING')
+<<<<<<< HEAD
   const musicMetingCDNUrl = siteConfig('MUSIC_PLAYER_METING_CDN_URL', 'https://cdnjs.cloudflare.com/ajax/libs/meting/2.0.1/Meting.min.js')
+=======
+  const musicMetingCDNUrl = siteConfig(
+    'MUSIC_PLAYER_METING_CDN_URL',
+    'https://cdnjs.cloudflare.com/ajax/libs/meting/2.0.1/Meting.min.js'
+  )
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 
   const initMusicPlayer = async () => {
     if (!musicPlayerEnable) {
@@ -36,6 +43,7 @@ const Player = () => {
     }
 
     if (!meting && window.APlayer) {
+<<<<<<< HEAD
       setPlayer(new window.APlayer({
         container: ref.current,
         fixed: true,
@@ -44,6 +52,18 @@ const Player = () => {
         order: order,
         audio: audio
       }))
+=======
+      setPlayer(
+        new window.APlayer({
+          container: ref.current,
+          fixed: true,
+          lrcType: lrcType,
+          autoplay: autoPlay,
+          order: order,
+          audio: audio
+        })
+      )
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
     }
   }
 
@@ -57,6 +77,7 @@ const Player = () => {
   return (
     <div className={playerVisible ? 'visible' : 'invisible'}>
       <link
+<<<<<<< HEAD
         rel="stylesheet"
         type="text/css"
         href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css"
@@ -74,6 +95,29 @@ const Player = () => {
           />
         : <div ref={ref} data-player={player} />
       }
+=======
+        rel='stylesheet'
+        type='text/css'
+        href='https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.css'
+      />
+      {meting ? (
+        <meting-js
+          fixed='true'
+          type='playlist'
+          preload='auto'
+          api={siteConfig(
+            'MUSIC_PLAYER_METING_API',
+            'https://api.i-meto.com/meting/api?server=:server&type=:type&id=:id&r=:r'
+          )}
+          autoplay={autoPlay}
+          order={siteConfig('MUSIC_PLAYER_ORDER')}
+          server={siteConfig('MUSIC_PLAYER_METING_SERVER')}
+          id={siteConfig('MUSIC_PLAYER_METING_ID')}
+        />
+      ) : (
+        <div ref={ref} data-player={player} />
+      )}
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
     </div>
   )
 }

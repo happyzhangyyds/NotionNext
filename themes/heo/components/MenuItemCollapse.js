@@ -1,5 +1,9 @@
 import Collapse from '@/components/Collapse'
+<<<<<<< HEAD
 import Link from 'next/link'
+=======
+import SmartLink from '@/components/SmartLink'
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 import { useState } from 'react'
 
 /**
@@ -25,6 +29,7 @@ export const MenuItemCollapse = ({ link }) => {
     return null
   }
 
+<<<<<<< HEAD
   return <>
         <div className='select-none w-full px-2 py-2 border rounded-xl text-left dark:bg-hexo-black-gray' onClick={toggleShow} >
             {!hasSubMenu && <Link
@@ -51,4 +56,57 @@ export const MenuItemCollapse = ({ link }) => {
             })}
         </Collapse>}
     </>
+=======
+  return (
+    <>
+      <div
+        className='select-none w-full p-2 border dark:border-gray-600 rounded-lg text-left dark:bg-[#1e1e1e]'
+        onClick={toggleShow}>
+        {!hasSubMenu && (
+          <SmartLink
+            href={link?.href}
+            target={link?.target}
+            className='font-extralight  flex justify-between pl-2 pr-4 dark:text-gray-200 no-underline tracking-widest'>
+            <span className=' transition-all items-center duration-200'>
+              {link?.icon && <i className={link.icon + ' mr-4'} />}
+              {link?.name}
+            </span>
+          </SmartLink>
+        )}
+        {hasSubMenu && (
+          <div
+            onClick={hasSubMenu ? toggleOpenSubMenu : null}
+            className='font-extralight flex items-center justify-between pl-2 pr-4 cursor-pointer  dark:text-gray-200 no-underline tracking-widest'>
+            <span className='transition-all items-center duration-200'>
+              {link?.icon && <i className={link.icon + ' mr-4'} />}
+              {link?.name}
+            </span>
+            <i
+              className={`select-none px-2 fas fa-chevron-left transition-all duration-200 ${isOpen ? '-rotate-90' : ''} text-gray-400`}></i>
+          </div>
+        )}
+      </div>
+
+      {/* 折叠子菜单 */}
+      {hasSubMenu && (
+        <Collapse isOpen={isOpen} className='rounded-xl'>
+          {link.subMenus.map((sLink, index) => {
+            return (
+              <div
+                key={index}
+                className='dark:bg-hexo-black-gray dark:text-gray-200 text-left px-3 justify-start bg-gray-50 hover:bg-gray-50 dark:hover:bg-gray-900 tracking-widest transition-all duration-200  py-3 pr-6'>
+                <SmartLink href={sLink.href} target={link?.target}>
+                  <span className='text-sm ml-4 whitespace-nowrap'>
+                    {link?.icon && <i className={sLink.icon + ' mr-2'} />}{' '}
+                    {sLink.title}
+                  </span>
+                </SmartLink>
+              </div>
+            )
+          })}
+        </Collapse>
+      )}
+    </>
+  )
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 }

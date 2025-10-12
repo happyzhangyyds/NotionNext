@@ -1,7 +1,11 @@
 import LazyImage from '@/components/LazyImage'
+<<<<<<< HEAD
 import { siteConfig } from '@/lib/config'
 import Link from 'next/link'
 import { checkContainHttp, sliceUrlFromHttp } from '@/lib/utils'
+=======
+import SmartLink from '@/components/SmartLink'
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 
 /**
  * 最新文章列表
@@ -16,6 +20,7 @@ const LatestPostsGroup = ({ latestPosts, siteInfo }) => {
     return <></>
   }
 
+<<<<<<< HEAD
   return <div className='grid grid-cols-2 gap-4'>
         {latestPosts.map(post => {
           const headerImage = post?.pageCoverThumbnail ? post.pageCoverThumbnail : siteInfo?.pageCover
@@ -47,5 +52,40 @@ const LatestPostsGroup = ({ latestPosts, siteInfo }) => {
           )
         })}
     </div>
+=======
+  return (
+    <div className='grid grid-cols-2 gap-4'>
+      {latestPosts.map(post => {
+        const headerImage = post?.pageCoverThumbnail
+          ? post.pageCoverThumbnail
+          : siteInfo?.pageCover
+
+        return (
+          <SmartLink
+            key={post.id}
+            passHref
+            title={post.title}
+            href={post?.href}
+            className={'my-3 flex flex-col w-full'}>
+            <div className='w-full h-24 md:h-60 overflow-hidden relative rounded-lg mb-2'>
+              <LazyImage
+                src={`${headerImage}`}
+                className='object-cover w-full h-full'
+              />
+            </div>
+
+            <div
+              className={
+                ' font-bold  overflow-x-hidden dark:text-white hover:text-indigo-600 px-2 duration-200 w-full rounded ' +
+                ' hover:text-indigo-400 cursor-pointer'
+              }>
+              <div className='line-clamp-2 menu-link'>{post.title}</div>
+            </div>
+          </SmartLink>
+        )
+      })}
+    </div>
+  )
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 }
 export default LatestPostsGroup

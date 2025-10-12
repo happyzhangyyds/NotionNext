@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 import Link from 'next/link'
 
 const TagItemMini = ({ tag, selected = false }) => {
   return (
     <Link
+=======
+import SmartLink from '@/components/SmartLink'
+
+const TagItemMini = ({ tag, selected = false }) => {
+  return (
+    <SmartLink
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
       key={tag}
       href={selected ? '/' : `/tag/${encodeURIComponent(tag.name)}`}
       passHref
@@ -14,7 +22,11 @@ const TagItemMini = ({ tag, selected = false }) => {
 
       <div className='font-light'>{selected && <i className='mr-1 fa-tag'/>} {tag.name + (tag.count ? `(${tag.count})` : '')} </div>
 
+<<<<<<< HEAD
     </Link>
+=======
+    </SmartLink>
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   );
 }
 

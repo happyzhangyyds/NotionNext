@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* eslint-disable */
 import { useEffect } from 'react'
 const id = 'canvasRibbon'
@@ -14,10 +15,25 @@ const Ribbon = () => {
     createRibbon()
     return () => destroyRibbon()
   }, [])
+=======
+import { useEffect } from 'react'
+import { loadExternalResource } from '@/lib/utils'
+
+const Ribbon = () => {
+  useEffect(() => {
+    loadExternalResource('/js/ribbon.js', 'js').then(url => {
+      window.createRibbon && window.createRibbon()
+    })
+
+    return () => window.destroyRibbon && window.destroyRibbon()
+  }, [])
+
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   return <></>
 }
 
 export default Ribbon
+<<<<<<< HEAD
 
 /**
  * 创建连接点
@@ -96,3 +112,5 @@ function createRibbon() {
       x()
   })()
 }
+=======
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a

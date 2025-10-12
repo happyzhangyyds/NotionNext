@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import busuanzi from '@/lib/busuanzi'
+=======
+import busuanzi from '@/lib/plugins/busuanzi'
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 import { useRouter } from 'next/router'
 import { useGlobal } from '@/lib/global'
 // import { useRouter } from 'next/router'

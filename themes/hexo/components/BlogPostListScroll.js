@@ -1,10 +1,19 @@
 import { siteConfig } from '@/lib/config'
+<<<<<<< HEAD
 import BlogPostCard from './BlogPostCard'
 import BlogPostListEmpty from './BlogPostListEmpty'
 import { useGlobal } from '@/lib/global'
 import { useEffect, useRef, useState } from 'react'
 import CONFIG from '../config'
 import { getListByPage } from '@/lib/utils'
+=======
+import { useGlobal } from '@/lib/global'
+import { getListByPage } from '@/lib/utils'
+import { useEffect, useRef, useState } from 'react'
+import CONFIG from '../config'
+import BlogPostCard from './BlogPostCard'
+import BlogPostListEmpty from './BlogPostListEmpty'
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 
 /**
  * 博客列表滚动分页
@@ -13,15 +22,32 @@ import { getListByPage } from '@/lib/utils'
  * @returns {JSX.Element}
  * @constructor
  */
+<<<<<<< HEAD
 const BlogPostListScroll = ({ posts = [], currentSearch, showSummary = siteConfig('HEXO_POST_LIST_SUMMARY', null, CONFIG), siteInfo }) => {
   const postsPerPage = parseInt(siteConfig('POSTS_PER_PAGE'))
   const [page, updatePage] = useState(1)
   const postsToShow = getListByPage(posts, page, postsPerPage)
+=======
+const BlogPostListScroll = ({
+  posts = [],
+  currentSearch,
+  showSummary = siteConfig('HEXO_POST_LIST_SUMMARY', null, CONFIG),
+  siteInfo
+}) => {
+  const { NOTION_CONFIG } = useGlobal()
+  const [page, updatePage] = useState(1)
+  const POSTS_PER_PAGE = siteConfig('POSTS_PER_PAGE', null, NOTION_CONFIG)
+  const postsToShow = getListByPage(posts, page, POSTS_PER_PAGE)
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 
   let hasMore = false
   if (posts) {
     const totalCount = posts.length
+<<<<<<< HEAD
     hasMore = page * postsPerPage < totalCount
+=======
+    hasMore = page * POSTS_PER_PAGE < totalCount
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   }
 
   const handleGetMore = () => {
@@ -33,7 +59,15 @@ const BlogPostListScroll = ({ posts = [], currentSearch, showSummary = siteConfi
   const scrollTrigger = () => {
     requestAnimationFrame(() => {
       const scrollS = window.scrollY + window.outerHeight
+<<<<<<< HEAD
       const clientHeight = targetRef ? (targetRef.current ? (targetRef.current.clientHeight) : 0) : 0
+=======
+      const clientHeight = targetRef
+        ? targetRef.current
+          ? targetRef.current.clientHeight
+          : 0
+        : 0
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
       if (scrollS > clientHeight + 100) {
         handleGetMore()
       }
@@ -54,6 +88,7 @@ const BlogPostListScroll = ({ posts = [], currentSearch, showSummary = siteConfi
   if (!postsToShow || postsToShow.length === 0) {
     return <BlogPostListEmpty currentSearch={currentSearch} />
   } else {
+<<<<<<< HEAD
     return <div id='container' ref={targetRef} className='w-full'>
 
       {/* 文章列表 */}
@@ -69,6 +104,34 @@ const BlogPostListScroll = ({ posts = [], currentSearch, showSummary = siteConfi
         > {hasMore ? locale.COMMON.MORE : `${locale.COMMON.NO_MORE}`} </div>
       </div>
     </div>
+=======
+    return (
+      <div id='container' ref={targetRef} className='w-full'>
+        {/* 文章列表 */}
+        <div className='space-y-6 px-2'>
+          {postsToShow.map(post => (
+            <BlogPostCard
+              key={post.id}
+              post={post}
+              showSummary={showSummary}
+              siteInfo={siteInfo}
+            />
+          ))}
+        </div>
+
+        <div>
+          <div
+            onClick={() => {
+              handleGetMore()
+            }}
+            className='w-full my-4 py-4 text-center cursor-pointer rounded-xl dark:text-gray-200'>
+            {' '}
+            {hasMore ? locale.COMMON.MORE : `${locale.COMMON.NO_MORE}`}{' '}
+          </div>
+        </div>
+      </div>
+    )
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   }
 }
 

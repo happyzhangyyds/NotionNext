@@ -12,7 +12,11 @@ export default function DisableCopy() {
       // 监听复制事件
       document.addEventListener('copy', function (event) {
         event.preventDefault() // 阻止默认复制行为
+<<<<<<< HEAD
         // alert('抱歉，本网页内容不可复制！')
+=======
+        alert('抱歉，本网页内容不可复制！')
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
       })
     }
   }, [])

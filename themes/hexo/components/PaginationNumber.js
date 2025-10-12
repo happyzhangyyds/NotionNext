@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import Link from 'next/link'
+=======
+import SmartLink from '@/components/SmartLink'
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
 import { useRouter } from 'next/router'
 
 /**
@@ -12,6 +16,7 @@ const PaginationNumber = ({ page, totalPage }) => {
   const router = useRouter()
   const currentPage = +page
   const showNext = page < totalPage
+<<<<<<< HEAD
   const pagePrefix = router.asPath.split('?')[0].replace(/\/page\/[1-9]\d*/, '').replace(/\/$/, '')
   const pages = generatePages(pagePrefix, page, currentPage, totalPage)
 
@@ -46,10 +51,48 @@ const PaginationNumber = ({ page, totalPage }) => {
           <i className="fas fa-angle-right" />
 
         </Link>
+=======
+  const pagePrefix = router.asPath
+    .split('?')[0]
+    .replace(/\/page\/[1-9]\d*/, '')
+    .replace(/\/$/, '')
+    .replace('.html', '')
+  const pages = generatePages(pagePrefix, page, currentPage, totalPage)
+
+  return (
+    <div className='mt-10 mb-5 flex justify-center items-end font-medium text-indigo-400 duration-500 py-3 space-x-2'>
+      {/* 上一页 */}
+      <SmartLink
+        href={{
+          pathname:
+            currentPage === 2
+              ? `${pagePrefix}/`
+              : `${pagePrefix}/page/${currentPage - 1}`,
+          query: router.query.s ? { s: router.query.s } : {}
+        }}
+        rel='prev'
+        className={`${currentPage === 1 ? 'invisible' : 'block'} pb-0.5 hover:bg-indigo-400 hover:text-white w-6 text-center cursor-pointer duration-200 hover:font-bold`}>
+        <i className='fas fa-angle-left' />
+      </SmartLink>
+
+      {pages}
+
+      {/* 下一页 */}
+      <SmartLink
+        href={{
+          pathname: `${pagePrefix}/page/${currentPage + 1}`,
+          query: router.query.s ? { s: router.query.s } : {}
+        }}
+        rel='next'
+        className={`${+showNext ? 'block' : 'invisible'} pb-0.5 hover:bg-indigo-400 hover:text-white w-6 text-center cursor-pointer duration-200 hover:font-bold`}>
+        <i className='fas fa-angle-right' />
+      </SmartLink>
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
     </div>
   )
 }
 
+<<<<<<< HEAD
 function getPageElement(page, currentPage, pagePrefix) {
   return (
     (<Link
@@ -66,6 +109,32 @@ function getPageElement(page, currentPage, pagePrefix) {
       {page}
 
     </Link>)
+=======
+/**
+ * 获取页码
+ * @param {*} page
+ * @param {*} currentPage
+ * @param {*} pagePrefix
+ * @returns
+ */
+function getPageElement(page, currentPage, pagePrefix) {
+  const selected = page + '' === currentPage + ''
+  return (
+    <SmartLink
+      href={page === 1 ? `${pagePrefix}/` : `${pagePrefix}/page/${page}`}
+      key={page}
+      passHref
+      className={`${
+        selected
+          ? 'font-bold bg-indigo-400 hover:bg-indigo-600 dark:bg-indigo-500 text-white'
+          : 'border-b border-indigo-400 text-indigo-400 hover:border-indigo-400 hover:bg-indigo-400'
+      }
+      duration-500  hover:font-bold hover:text-white
+      cursor-pointer pb-0.5 w-6 text-center
+      `}>
+      {page}
+    </SmartLink>
+>>>>>>> 1d4dad242e4be006e130e03a1cd8d1ce712cec5a
   )
 }
 
