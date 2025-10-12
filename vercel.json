@@ -3,106 +3,715 @@
   "trailingSlash": false,
   "headers": [],
   "redirects": [
-    { "source": "/article/wdf-1", "destination": "https://hugo.matrixcore.top/wdf-1/", "permanent": true },
-    { "source": "/article/beauty03", "destination": "https://hugo.matrixcore.top/beauty03/", "permanent": true },
-    { "source": "/article/beauty07", "destination": "https://hugo.matrixcore.top/beauty07/", "permanent": true },
-    { "source": "/article/beauty09", "destination": "https://hugo.matrixcore.top/beauty09/", "permanent": true },
-    { "source": "/article/beauty11", "destination": "https://hugo.matrixcore.top/beauty11/", "permanent": true },
-    { "source": "/article/beauty13", "destination": "https://hugo.matrixcore.top/beauty13/", "permanent": true },
-    { "source": "/article/beauty14", "destination": "https://hugo.matrixcore.top/beauty14/", "permanent": true },
-    { "source": "/article/beauty15", "destination": "https://hugo.matrixcore.top/beauty15/", "permanent": true },
-    { "source": "/article/calendar", "destination": "https://hugo.matrixcore.top/calendar/", "permanent": true },
-    { "source": "/article/beautify", "destination": "https://hugo.matrixcore.top/beautify/", "permanent": true },
-    { "source": "/article/hackway", "destination": "https://hugo.matrixcore.top/hackway/", "permanent": true },
-    { "source": "/article/231116", "destination": "https://hugo.matrixcore.top/231116/", "permanent": true },
-    { "source": "/article/hugo", "destination": "https://hugo.matrixcore.top/hugo/", "permanent": true },
-    { "source": "/article/sprache", "destination": "https://hugo.matrixcore.top/sprache/", "permanent": true },
-    { "source": "/article/obsidian", "destination": "https://hugo.matrixcore.top/obsidian/", "permanent": true },
-    { "source": "/article/pleasure-management", "destination": "https://hugo.matrixcore.top/pleasure-management/", "permanent": true },
-    { "source": "/article/231025", "destination": "https://hugo.matrixcore.top/231025/", "permanent": true },
-    { "source": "/article/231015", "destination": "https://hugo.matrixcore.to p/231015/", "permanent": true },
-    { "source": "/article/heavenswordanddragonsabre01", "destination": "https://hugo.matrixcore.top/heavenswordanddragonsabre01/", "permanent": true },
-    { "source": "/article/ssh", "destination": "https://hugo.matrixcore.top/ssh/", "permanent": true },
-    { "source": "/article/joker", "destination": "https://hugo.matrixcore.top/joker/", "permanent": true },
-    { "source": "/article/communication", "destination": "https://hugo.matrixcore.top/communication/", "permanent": true },
-    { "source": "/article/reading", "destination": "https://hugo.matrixcore.top/reading/", "permanent": true },
-    { "source": "/article/231002", "destination": "https://hugo.matrixcore.top/231002/", "permanent": true },
-    { "source": "/article/teacher", "destination": "https://hugo.matrixcore.top/teacher/", "permanent": true },
-    { "source": "/article/piano", "destination": "https://hugo.matrixcore.top/piano/", "permanent": true },
-    { "source": "/article/mv-mu-1", "destination": "https://hugo.matrixcore.top/mv-mu-1/", "permanent": true },
-    { "source": "/article/love", "destination": "https://hugo.matrixcore.top/love/", "permanent": true },
-    { "source": "/article/231205", "destination": "https://hugo.matrixcore.top/231205/", "permanent": true },
-    { "source": "/article/231110", "destination": "https://hugo.matrixcore.top/231110/", "permanent": true },
-    { "source": "/article/gifts", "destination": "https://hugo.matrixcore.top/gifts/", "permanent": true },
-    { "source": "/article/conch", "destination": "https://hugo.matrixcore.top/conch/", "permanent": true },
-    { "source": "/article/231105", "destination": "https://hugo.matrixcore.top/231105/", "permanent": true },
-    { "source": "/article/231117", "destination": "https://hugo.matrixcore.top/231117/", "permanent": true },
-    { "source": "/article/231125", "destination": "https://hugo.matrixcore.top/231125/", "permanent": true },
-    { "source": "/article/231101", "destination": "https://hugo.matrixcore.top/231101/", "permanent": true },
-    { "source": "/article/231124", "destination": "https://hugo.matrixcore.top/231124/", "permanent": true },
-    { "source": "/article/error", "destination": "https://hugo.matrixcore.top/error/", "permanent": true },
-    { "source": "/article/231030", "destination": "https://hugo.matrixcore.top/231030/", "permanent": true },
-    { "source": "/article/231031", "destination": "https://hugo.matrixcore.top/231031/", "permanent": true },
-    { "source": "/article/231103", "destination": "https://hugo.matrixcore.top/231103/", "permanent": true },
-    { "source": "/article/231029", "destination": "https://hugo.matrixcore.top/231029/", "permanent": true },
-    { "source": "/article/231022", "destination": "https://hugo.matrixcore.top/231022/", "permanent": true },
-    { "source": "/article/stimulate", "destination": "https://hugo.matrixcore.top/stimulate/", "permanent": true },
-    { "source": "/article/job", "destination": "https://hugo.matrixcore.top/job/", "permanent": true },
-    { "source": "/article/accident", "destination": "https://hugo.matrixcore.top/accident/", "permanent": true },
-    { "source": "/article/231102", "destination": "https://hugo.matrixcore.top/231102/", "permanent": true },
-    { "source": "/article/231104", "destination": "https://hugo.matrixcore.top/231104/", "permanent": true },
-    { "source": "/article/xu", "destination": "https://hugo.matrixcore.top/xu/", "permanent": true },
-    { "source": "/article/cong", "destination": "https://hugo.matrixcore.top/cong/", "permanent": true },
-    { "source": "/article/jing", "destination": "https://hugo.matrixcore.top/jing/", "permanent": true },
-    { "source": "/article/yu001", "destination": "https://hugo.matrixcore.top/yu001/", "permanent": true },
-    { "source": "/article/yu002", "destination": "https://hugo.matrixcore.top/yu002/", "permanent": true },
-    { "source": "/article/yu003", "destination": "https://hugo.matrixcore.top/yu003/", "permanent": true },
-    { "source": "/article/yu004", "destination": "https://hugo.matrixcore.top/yu004/", "permanent": true },
-    { "source": "/article/yu005", "destination": "https://hugo.matrixcore.top/yu005/", "permanent": true },
-    { "source": "/article/yu006", "destination": "https://hugo.matrixcore.top/yu006/", "permanent": true },
-    { "source": "/article/yu007", "destination": "https://hugo.matrixcore.top/yu007/", "permanent": true },
-    { "source": "/article/yu008", "destination": "https://hugo.matrixcore.top/yu008/", "permanent": true },
-    { "source": "/article/yu009", "destination": "https://hugo.matrixcore.top/yu009/", "permanent": true },
-    { "source": "/article/yu010", "destination": "https://hugo.matrixcore.top/yu010/", "permanent": true },
-    { "source": "/article/yu011", "destination": "https://hugo.matrixcore.top/yu011/", "permanent": true },
-    { "source": "/article/yu012", "destination": "https://hugo.matrixcore.top/yu012/", "permanent": true },
-    { "source": "/article/yu013", "destination": "https://hugo.matrixcore.top/yu013/", "permanent": true },
-    { "source": "/article/yu014", "destination": "https://hugo.matrixcore.top/yu014/", "permanent": true },
-    { "source": "/article/yu015", "destination": "https://hugo.matrixcore.top/yu015/", "permanent": true },
-    { "source": "/article/yu017", "destination": "https://hugo.matrixcore.top/yu017/", "permanent": true },
-    { "source": "/article/yu018", "destination": "https://hugo.matrixcore.top/yu018/", "permanent": true },
-    { "source": "/article/yu101", "destination": "https://hugo.matrixcore.top/yu101/", "permanent": true },
-    { "source": "/article/yu102", "destination": "https://hugo.matrixcore.top/yu102/", "permanent": true },
-    { "source": "/article/DeuM1", "destination": "https://hugo.matrixcore.top/DeuM1/", "permanent": true },
-    { "source": "/article/sunflower", "destination": "https://hugo.matrixcore.top/sunflower/", "permanent": true },
-    { "source": "/article/sharplingo", "destination": "https://hugo.matrixcore.top/sharplingo/", "permanent": true },
-    { "source": "/article/nature", "destination": "https://hugo.matrixcore.top/nature/", "permanent": true },
-    { "source": "/article/learn", "destination": "https://hugo.matrixcore.top/learn/", "permanent": true },
-    { "source": "/article/bing001", "destination": "https://hugo.matrixcore.top/bing001/", "permanent": true },
-    { "source": "/article/heart", "destination": "https://hugo.matrixcore.top/heart/", "permanent": true },
-    { "source": "/article/marxism-1", "destination": "https://hugo.matrixcore.top/marxism-1/", "permanent": true },
-    { "source": "/article/tianyi", "destination": "https://hugo.matrixcore.top/tianyi/", "permanent": true },
-    { "source": "/article/LubanCat-16", "destination": "https://hugo.matrixcore.top/lubancat-16/", "permanent": true },
-    { "source": "/article/RSS", "destination": "https://hugo.matrixcore.top/rss/", "permanent": true },
-    { "source": "/article/license", "destination": "https://hugo.matrixcore.top/license/", "permanent": true },
-    { "source": "/article/andawell_minji_team_building", "destination": "https://hugo.matrixcore.top/andawell_minji_team_building/", "permanent": true },
-    { "source": "/article/Spring", "destination": "https://hugo.matrixcore.top/spring/", "permanent": true },
-    { "source": "/article/hugo-virgo", "destination": "https://hugo.matrixcore.top/hugo-virgo/", "permanent": true },
-    { "source": "/article/azure", "destination": "https://hugo.matrixcore.top/azure/", "permanent": true },
-    { "source": "/article/Saladict", "destination": "https://hugo.matrixcore.top/saladict/", "permanent": true },
-    { "source": "/article/231210", "destination": "https://hugo.matrixcore.top/231210/", "permanent": true },
-    { "source": "/article/RISC-V", "destination": "https://hugo.matrixcore.top/risc-v/", "permanent": true },
-    { "source": "/article/Shantaram-1", "destination": "https://hugo.matrixcore.top/shantaram-1/", "permanent": true },
-    { "source": "/article/Shantaram-2", "destination": "https://hugo.matrixcore.top/shantaram-2/", "permanent": true },
-    { "source": "/article/231230", "destination": "https://hugo.matrixcore.top/231230/", "permanent": true },
-    { "source": "/article/240216", "destination": "https://hugo.matrixcore.top/240216/", "permanent": true },
-    { "source": "/article/240208", "destination": "https://hugo.matrixcore.top/240208/", "permanent": true },
-    { "source": "/article/240624", "destination": "https://hugo.matrixcore.top/240624/", "permanent": true },
-    { "source": "/article/Pre-employment_Checkup", "destination": "https://hugo.matrixcore.top/pre-employment_checkup/", "permanent": true },
-    { "source": "/article/starry_sky", "destination": "https://hugo.matrixcore.top/starry_sky/", "permanent": true },
-    { "source": "/article/senior_thesis_defense", "destination": "https://hugo.matrixcore.top/senior_thesis_defense/", "permanent": true },
-    { "source": "/article/NotionNext_Hugo", "destination": "https://hugo.matrixcore.top/notionnext_hugo/", "permanent": true },
-    { "source": "/article/boombeach", "destination": "https://hugo.matrixcore.top/boombeach/", "permanent": true },
-    { "source": "/article/lubancat_conky", "destination": "https://hugo.matrixcore.top/lubancat_conky/", "permanent": true }
+    {
+      "source": "/article/250720",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/250720/",
+      "permanent": true
+    },
+    {
+      "source": "/article/250713",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/250713/",
+      "permanent": true
+    },
+    {
+      "source": "/article/250519",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/250519/",
+      "permanent": true
+    },
+    {
+      "source": "/article/250515",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/250515/",
+      "permanent": true
+    },
+    {
+      "source": "/article/250510",
+      "destination": "https://hugo.matrixcore.top/posts/高能效人士的七个习惯/250510/",
+      "permanent": true
+    },
+    {
+      "source": "/article/qingming_guilin_trip-2",
+      "destination": "https://hugo.matrixcore.top/posts/推荐/qingming_guilin_trip-2/",
+      "permanent": true
+    },
+    {
+      "source": "/article/qingming_guilin_trip-1",
+      "destination": "https://hugo.matrixcore.top/posts/推荐/qingming_guilin_trip-1/",
+      "permanent": true
+    },
+    {
+      "source": "/article/250323",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/250323/",
+      "permanent": true
+    },
+    {
+      "source": "/article/250309",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/250309/",
+      "permanent": true
+    },
+    {
+      "source": "/article/250205",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/250205/",
+      "permanent": true
+    },
+    {
+      "source": "/article/improve",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/必看精选/improve/",
+      "permanent": true
+    },
+    {
+      "source": "/article/250106",
+      "destination": "https://hugo.matrixcore.top/posts/高能效人士的七个习惯/250106/",
+      "permanent": true
+    },
+    {
+      "source": "/article/250101",
+      "destination": "https://hugo.matrixcore.top/posts/对话未来/250101/",
+      "permanent": true
+    },
+    {
+      "source": "/article/241127",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/241127/",
+      "permanent": true
+    },
+    {
+      "source": "/article/241027",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/241027/",
+      "permanent": true
+    },
+    {
+      "source": "/article/241020",
+      "destination": "https://hugo.matrixcore.top/posts/对话未来/241020/",
+      "permanent": true
+    },
+    {
+      "source": "/article/241014",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/241014/",
+      "permanent": true
+    },
+    {
+      "source": "/article/241009",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/241009/",
+      "permanent": true
+    },
+    {
+      "source": "/article/241007",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/241007/",
+      "permanent": true
+    },
+    {
+      "source": "/article/240921",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/240921/",
+      "permanent": true
+    },
+    {
+      "source": "/article/240908",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/240908/",
+      "permanent": true
+    },
+    {
+      "source": "/article/240826",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/240826/",
+      "permanent": true
+    },
+    {
+      "source": "/article/240811",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/240811/",
+      "permanent": true
+    },
+    {
+      "source": "/article/health_preservation_wisdom_6",
+      "destination": "https://hugo.matrixcore.top/posts/养生智慧-曲黎敏/health_preservation_wisdom_6/",
+      "permanent": true
+    },
+    {
+      "source": "/article/wisdom_of_life_chapter2",
+      "destination": "https://hugo.matrixcore.top/posts/生命智慧-曲黎敏/wisdom_of_life_chapter2/",
+      "permanent": true
+    },
+    {
+      "source": "/article/mailx_crontab",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/mailx_crontab/",
+      "permanent": true
+    },
+    {
+      "source": "/article/Night_Cruise_on_the_Pearl_River",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/Night_Cruise_on_the_Pearl_River/",
+      "permanent": true
+    },
+    {
+      "source": "/article/240622",
+      "destination": "https://hugo.matrixcore.top/posts/必看精选/240622/",
+      "permanent": true
+    },
+    {
+      "source": "/article/240603",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/240603/",
+      "permanent": true
+    },
+    {
+      "source": "/article/Yolov5_multispectral",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/Yolov5_multispectral/",
+      "permanent": true
+    },
+    {
+      "source": "/article/Graduation-Design",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/Graduation-Design/",
+      "permanent": true
+    },
+    {
+      "source": "/article/jianzheng-1",
+      "destination": "https://hugo.matrixcore.top/posts/水问-简媜/jianzheng-1/",
+      "permanent": true
+    },
+    {
+      "source": "/article/jianzhen-4",
+      "destination": "https://hugo.matrixcore.top/posts/水问-简媜/jianzhen-4/",
+      "permanent": true
+    },
+    {
+      "source": "/article/Nextcloud_Webdav-Zotero",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/Nextcloud_Webdav-Zotero/",
+      "permanent": true
+    },
+    {
+      "source": "/article/jianzhen-2",
+      "destination": "https://hugo.matrixcore.top/posts/水问-简媜/jianzhen-2/",
+      "permanent": true
+    },
+    {
+      "source": "/article/jianzhen-3",
+      "destination": "https://hugo.matrixcore.top/posts/水问-简媜/jianzhen-3/",
+      "permanent": true
+    },
+    {
+      "source": "/article/jianzhen-1",
+      "destination": "https://hugo.matrixcore.top/posts/水问-简媜/jianzhen-1/",
+      "permanent": true
+    },
+    {
+      "source": "/article/240120",
+      "destination": "https://hugo.matrixcore.top/posts/对话未来/240120/",
+      "permanent": true
+    },
+    {
+      "source": "/article/linux-wifi",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/linux-wifi/",
+      "permanent": true
+    },
+    {
+      "source": "/article/video-record",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/video-record/",
+      "permanent": true
+    },
+    {
+      "source": "/article/240309",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/240309/",
+      "permanent": true
+    },
+    {
+      "source": "/article/crontab-1",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/crontab-1/",
+      "permanent": true
+    },
+    {
+      "source": "/article/Wisdom-of-Life-2",
+      "destination": "https://hugo.matrixcore.top/posts/生命智慧-曲黎敏/Wisdom-of-Life-2/",
+      "permanent": true
+    },
+    {
+      "source": "/article/Wisdom-of-Life-1",
+      "destination": "https://hugo.matrixcore.top/posts/生命智慧-曲黎敏/Wisdom-of-Life-1/",
+      "permanent": true
+    },
+    {
+      "source": "/article/Hardware-engineer",
+      "destination": "https://hugo.matrixcore.top/posts/Cadence/Hardware-engineer/",
+      "permanent": true
+    },
+    {
+      "source": "/article/EMC",
+      "destination": "https://hugo.matrixcore.top/posts/Cadence/EMC/",
+      "permanent": true
+    },
+    {
+      "source": "/article/yolov5-2",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/yolov5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/article/yolov5-1",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/yolov5-1/",
+      "permanent": true
+    },
+    {
+      "source": "/article/elog",
+      "destination": "https://hugo.matrixcore.top/posts/推荐/elog/",
+      "permanent": true
+    },
+    {
+      "source": "/article/Terminal",
+      "destination": "https://hugo.matrixcore.top/posts/流动核心/Terminal/",
+      "permanent": true
+    },
+    {
+      "source": "/article/AFCS03",
+      "destination": "https://hugo.matrixcore.top/posts/自动飞控/AFCS03/",
+      "permanent": true
+    },
+    {
+      "source": "/article/AFSC02",
+      "destination": "https://hugo.matrixcore.top/posts/自动飞控/AFSC02/",
+      "permanent": true
+    },
+    {
+      "source": "/article/AFCS",
+      "destination": "https://hugo.matrixcore.top/posts/自动飞控/AFCS/",
+      "permanent": true
+    },
+    {
+      "source": "/article/picturespeed",
+      "destination": "https://hugo.matrixcore.top/posts/推荐/picturespeed/",
+      "permanent": true
+    },
+    {
+      "source": "/article/ubuntu",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/ubuntu/",
+      "permanent": true
+    },
+    {
+      "source": "/article/sunrise",
+      "destination": "https://hugo.matrixcore.top/posts/流动核心/sunrise/",
+      "permanent": true
+    },
+    {
+      "source": "/article/flow",
+      "destination": "https://hugo.matrixcore.top/posts/流动核心/flow/",
+      "permanent": true
+    },
+    {
+      "source": "/article/poem",
+      "destination": "https://hugo.matrixcore.top/posts/流动核心/poem/",
+      "permanent": true
+    },
+    {
+      "source": "/article/inexhaustible",
+      "destination": "https://hugo.matrixcore.top/posts/流动核心/inexhaustible/",
+      "permanent": true
+    },
+    {
+      "source": "/article/feedback",
+      "destination": "https://hugo.matrixcore.top/posts/流动核心/feedback/",
+      "permanent": true
+    },
+    {
+      "source": "/article/beauty15",
+      "destination": "https://hugo.matrixcore.top/posts/谈美-朱光潜/beauty15/",
+      "permanent": true
+    },
+    {
+      "source": "/article/beauty14",
+      "destination": "https://hugo.matrixcore.top/posts/谈美-朱光潜/beauty14/",
+      "permanent": true
+    },
+    {
+      "source": "/article/LubanCat-16",
+      "destination": "https://hugo.matrixcore.top/posts/鲁班猫/LubanCat-16/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231025",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231025/",
+      "permanent": true
+    },
+    {
+      "source": "/article/DeuM1",
+      "destination": "https://hugo.matrixcore.top/posts/德语学习/DeuM1/",
+      "permanent": true
+    },
+    {
+      "source": "/article/beauty13",
+      "destination": "https://hugo.matrixcore.top/posts/谈美-朱光潜/beauty13/",
+      "permanent": true
+    },
+    {
+      "source": "/article/Calendar",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/Calendar/",
+      "permanent": true
+    },
+    {
+      "source": "/article/ssh",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/ssh/",
+      "permanent": true
+    },
+    {
+      "source": "/article/joker",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/joker/",
+      "permanent": true
+    },
+    {
+      "source": "/article/beauty11",
+      "destination": "https://hugo.matrixcore.top/posts/谈美-朱光潜/beauty11/",
+      "permanent": true
+    },
+    {
+      "source": "/article/beauty09",
+      "destination": "https://hugo.matrixcore.top/posts/谈美-朱光潜/beauty09/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231002",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231002/",
+      "permanent": true
+    },
+    {
+      "source": "/article/beauty07",
+      "destination": "https://hugo.matrixcore.top/posts/谈美-朱光潜/beauty07/",
+      "permanent": true
+    },
+    {
+      "source": "/article/beauty03",
+      "destination": "https://hugo.matrixcore.top/posts/谈美-朱光潜/beauty03/",
+      "permanent": true
+    },
+    {
+      "source": "/article/teacher",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/teacher/",
+      "permanent": true
+    },
+    {
+      "source": "/article/tianyi",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/tianyi/",
+      "permanent": true
+    },
+    {
+      "source": "/article/beautify",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/beautify/",
+      "permanent": true
+    },
+    {
+      "source": "/article/mv-mu-1",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/mv-mu-1/",
+      "permanent": true
+    },
+    {
+      "source": "/article/xu",
+      "destination": "https://hugo.matrixcore.top/posts/研英-基础阶段/热门文章/xu/",
+      "permanent": true
+    },
+    {
+      "source": "/article/cong",
+      "destination": "https://hugo.matrixcore.top/posts/研英-基础阶段/热门文章/cong/",
+      "permanent": true
+    },
+    {
+      "source": "/article/sunflower",
+      "destination": "https://hugo.matrixcore.top/posts/流动核心/sunflower/",
+      "permanent": true
+    },
+    {
+      "source": "/article/jing",
+      "destination": "https://hugo.matrixcore.top/posts/研英-基础阶段/热门文章/jing/",
+      "permanent": true
+    },
+    {
+      "source": "/article/learn",
+      "destination": "https://hugo.matrixcore.top/posts/必看精选/learn/",
+      "permanent": true
+    },
+    {
+      "source": "/article/love",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/love/",
+      "permanent": true
+    },
+    {
+      "source": "/article/jianzhen-5",
+      "destination": "https://hugo.matrixcore.top/posts/水问-简媜/jianzhen-5/",
+      "permanent": true
+    },
+    {
+      "source": "/article/Marxism-1",
+      "destination": "https://hugo.matrixcore.top/posts/对话未来/Marxism-1/",
+      "permanent": true
+    },
+    {
+      "source": "/article/job",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/job/",
+      "permanent": true
+    },
+    {
+      "source": "/article/accident",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/accident/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231102",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231102/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231104",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231104/",
+      "permanent": true
+    },
+    {
+      "source": "/article/stimulate",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/stimulate/",
+      "permanent": true
+    },
+    {
+      "source": "/article/pleasure-management",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/pleasure-management/",
+      "permanent": true
+    },
+    {
+      "source": "/article/obsidian",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/obsidian/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231022",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231022/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231029",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231029/",
+      "permanent": true
+    },
+    {
+      "source": "/article/heart",
+      "destination": "https://hugo.matrixcore.top/posts/对话未来/heart/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231103",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231103/",
+      "permanent": true
+    },
+    {
+      "source": "/article/bing001",
+      "destination": "https://hugo.matrixcore.top/posts/对话未来/bing001/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231031",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231031/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231030",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231030/",
+      "permanent": true
+    },
+    {
+      "source": "/article/sprache",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/sprache/",
+      "permanent": true
+    },
+    {
+      "source": "/article/error",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/error/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231124",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231124/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231101",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231101/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231117",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231117/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231125",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231125/",
+      "permanent": true
+    },
+    {
+      "source": "/article/hugo",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/hugo/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231116",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/231116/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231105",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231105/",
+      "permanent": true
+    },
+    {
+      "source": "/article/gifts",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/gifts/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231205",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231205/",
+      "permanent": true
+    },
+    {
+      "source": "/article/FPGA010",
+      "destination": "https://hugo.matrixcore.top/posts/野火FPGA/FPGA010/",
+      "permanent": true
+    },
+    {
+      "source": "/article/FPGA008",
+      "destination": "https://hugo.matrixcore.top/posts/野火FPGA/FPGA008/",
+      "permanent": true
+    },
+    {
+      "source": "/article/240121",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/240121/",
+      "permanent": true
+    },
+    {
+      "source": "/article/FPGA009",
+      "destination": "https://hugo.matrixcore.top/posts/野火FPGA/FPGA009/",
+      "permanent": true
+    },
+    {
+      "source": "/article/240208",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/240208/",
+      "permanent": true
+    },
+    {
+      "source": "/article/FPGA018",
+      "destination": "https://hugo.matrixcore.top/posts/野火FPGA/FPGA018/",
+      "permanent": true
+    },
+    {
+      "source": "/article/240216",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/240216/",
+      "permanent": true
+    },
+    {
+      "source": "/article/FPGA015",
+      "destination": "https://hugo.matrixcore.top/posts/野火FPGA/FPGA015/",
+      "permanent": true
+    },
+    {
+      "source": "/article/FPGA019",
+      "destination": "https://hugo.matrixcore.top/posts/野火FPGA/FPGA019/",
+      "permanent": true
+    },
+    {
+      "source": "/article/FPGA012",
+      "destination": "https://hugo.matrixcore.top/posts/野火FPGA/FPGA012/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231210",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231210/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231230",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231230/",
+      "permanent": true
+    },
+    {
+      "source": "/article/cadence1",
+      "destination": "https://hugo.matrixcore.top/posts/Cadence/cadence1/",
+      "permanent": true
+    },
+    {
+      "source": "/article/FPGA014",
+      "destination": "https://hugo.matrixcore.top/posts/野火FPGA/FPGA014/",
+      "permanent": true
+    },
+    {
+      "source": "/article/RSS",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/RSS/",
+      "permanent": true
+    },
+    {
+      "source": "/article/license",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/license/",
+      "permanent": true
+    },
+    {
+      "source": "/article/azure",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/azure/",
+      "permanent": true
+    },
+    {
+      "source": "/article/231217",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/231217/",
+      "permanent": true
+    },
+    {
+      "source": "/article/Saladict",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/Saladict/",
+      "permanent": true
+    },
+    {
+      "source": "/article/FPGA",
+      "destination": "https://hugo.matrixcore.top/posts/野火FPGA/FPGA/",
+      "permanent": true
+    },
+    {
+      "source": "/article/FPGA013",
+      "destination": "https://hugo.matrixcore.top/posts/野火FPGA/FPGA013/",
+      "permanent": true
+    },
+    {
+      "source": "/article/FPGA017",
+      "destination": "https://hugo.matrixcore.top/posts/野火FPGA/FPGA017/",
+      "permanent": true
+    },
+    {
+      "source": "/article/FPGA011",
+      "destination": "https://hugo.matrixcore.top/posts/野火FPGA/FPGA011/",
+      "permanent": true
+    },
+    {
+      "source": "/article/hugo-virgo",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/hugo-virgo/",
+      "permanent": true
+    },
+    {
+      "source": "/article/Shantaram-1",
+      "destination": "https://hugo.matrixcore.top/posts/项塔兰-Gregory/Shantaram-1/",
+      "permanent": true
+    },
+    {
+      "source": "/article/Shantaram-2",
+      "destination": "https://hugo.matrixcore.top/posts/项塔兰-Gregory/Shantaram-2/",
+      "permanent": true
+    },
+    {
+      "source": "/article/Spring",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/Spring/",
+      "permanent": true
+    },
+    {
+      "source": "/article/RISC-V",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/RISC-V/",
+      "permanent": true
+    },
+    {
+      "source": "/article/NotionNext_Hugo",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/NotionNext_Hugo/",
+      "permanent": true
+    },
+    {
+      "source": "/article/Pre-employment_Checkup",
+      "destination": "https://hugo.matrixcore.top/posts/情绪表达/Pre-employment_Checkup/",
+      "permanent": true
+    },
+    {
+      "source": "/article/lubancat_conky",
+      "destination": "https://hugo.matrixcore.top/posts/实用教程/lubancat_conky/",
+      "permanent": true
+    }
   ]
 }
